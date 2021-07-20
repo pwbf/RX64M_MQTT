@@ -1,0 +1,3186 @@
+Renesas Optimizing Linker (W3.02.00 )             10-Jul-2021 13:39:21
+
+*** Options ***
+
+-MAKEUD=DefaultBuild\LeadWell_Vibr.lk.ud
+-subcommand=DefaultBuild\LeadWell_Vibr.clnk
+-library=DefaultBuild\LeadWell_Vibr.lib
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_smc_cgc.obj
+-input=DefaultBuild\r_smc_cgc_user.obj
+-input=DefaultBuild\r_smc_interrupt.obj
+-input=DefaultBuild\hwsetup.obj
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\lowsrc.obj
+-input=DefaultBuild\mcu_locks.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\r_bsp_common.obj
+-input=DefaultBuild\r_bsp_cpu.obj
+-input=DefaultBuild\r_bsp_interrupts.obj
+-input=DefaultBuild\r_bsp_locking.obj
+-input=DefaultBuild\r_bsp_mcu_startup.obj
+-input=DefaultBuild\r_bsp_software_interrupt.obj
+-input=DefaultBuild\r_rx_intrinsic_functions.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\mcu_clocks.obj
+-input=DefaultBuild\mcu_init.obj
+-input=DefaultBuild\mcu_interrupts.obj
+-input=DefaultBuild\mcu_mapped_interrupts.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\Pin.obj
+-input=DefaultBuild\ether_callback.obj
+-input=DefaultBuild\t4_driver.obj
+-input=DefaultBuild\timer.obj
+-input=DefaultBuild\config_tcpudp.obj
+-input=DefaultBuild\r_cmt_rx.obj
+-input=DefaultBuild\r_ether_rx.obj
+-input=DefaultBuild\phy.obj
+-input=DefaultBuild\r_ether_setting_rx.obj
+-input=DefaultBuild\r_dhcp_client.obj
+-input=DefaultBuild\r_dns_client.obj
+-input=DefaultBuild\r_byteq.obj
+-input=DefaultBuild\r_sci_rx.obj
+-input=DefaultBuild\r_sci_rx64m.obj
+-input=DefaultBuild\r_sci_rx64m_data.obj
+-input=DefaultBuild\Sensor.obj
+-input=DefaultBuild\dsp_avg.obj
+-input=DefaultBuild\dsp_peak.obj
+-input=DefaultBuild\dsp_process.obj
+-input=DefaultBuild\dsp_RFFT.obj
+-input=DefaultBuild\EthernetProcess.obj
+-input=DefaultBuild\globalVar.obj
+-input=DefaultBuild\LeadWell_Vibr.obj
+-input=DefaultBuild\r_s12ad_rx.obj
+-input=DefaultBuild\r_s12ad_rx63x.obj
+-input=DefaultBuild\r_s12ad_rx64m.obj
+-input=DefaultBuild\r_s12ad_rx65x.obj
+-input=DefaultBuild\LEDprocess.obj
+-library=src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib
+-library=src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib
+-library=src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib
+-library=src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib
+-library=src\dsplib-rxv2\RX_DSP_FPU_LE_Check.lib
+-library=src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib
+-library=src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib
+-library=src\dsplib-rxv2\RX_DSP_FPU_LE_Check.lib
+-noprelink
+-output=DefaultBuild\LeadWell_Vibr.abs
+-vect=_undefined_interrupt_source_isr
+-list=DefaultBuild\LeadWell_Vibr.map
+-show=symbol,total_size
+-nooptimize
+-start=SI,SU,B_1,R_1,B_2,R_2,B,R/00000020,B_ETHERNET_BUFFERS_1,B_RX_DESC_1,B_TX_DESC_1/00030000,PResetPRG/0FFC00000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFC00100,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-stack
+-nologo
+-end
+
+*** Error information ***
+
+W0561010:Duplicate file specified in option "library" : "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib"
+W0561010:Duplicate file specified in option "library" : "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib"
+W0561010:Duplicate file specified in option "library" : "src\dsplib-rxv2\RX_DSP_FPU_LE_Check.lib"
+W0561320:Duplicate symbol "__ether_proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_rcv_arp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_rcv_arp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_resolve" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_resolve" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_arp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_arp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_ip" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_ip" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_add" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_add" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_del" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_del" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_init" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_init" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_p_rcv_buff" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_p_rcv_buff" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ip_rcv_hdr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_rcv_hdr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd_icmp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd_icmp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_ipadd_proto" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_ipadd_proto" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_multicast" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_multicast" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_broadcast" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_broadcast" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "_data_link_buf_ptr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "_data_link_buf_ptr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_tbl" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_tbl" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_head" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_head" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(ip)"
+W0561320:Duplicate symbol "_R_t4_version" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(T4_Version)"
+W0561320:Duplicate symbol "_R_t4_version" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(T4_Version)"
+W0561320:Duplicate symbol "_net2hl_yn_xn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "_net2hl_yn_xn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__process_tcpip" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__process_tcpip" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_acpt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_acpt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_con" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_con" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_sht_cls" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_sht_cls" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_snddt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_snddt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_rcvdt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_rcvdt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cpy_rwdat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cpy_rwdat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_stat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_stat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_rst" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_rst" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_syn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_syn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_ack" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_ack" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_opt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_opt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_proc_data" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_proc_data" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_fin" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_fin" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_swin_updt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_swin_updt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cancel_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cancel_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_clr_rtq" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_clr_rtq" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_return_listen" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_return_listen" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_tmout_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_tmout_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_is_tcb_queue_over" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_is_tcb_queue_over" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_call_callback" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_call_callback" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_recv_polling" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_recv_polling" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_callback_info" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_callback_info" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "_head_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "_head_tcb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tx_hdr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tx_hdr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_pre_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_pre_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "_tcpudp_open" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_open" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_close" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_close" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getRAMsize_sub" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getRAMsize_sub" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTcpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTcpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getUdpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getUdpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getIpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getIpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTblRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTblRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_get_ramsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_get_ramsize" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_acp_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_acp_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_con_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_con_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_sht_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_sht_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_cls_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_cls_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_req" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_req" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_clr_req" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_clr_req" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_read_stat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_read_stat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_set_mss" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_set_mss" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__ether_arp_tbl" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__ether_arp_tbl" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "_udp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "_udp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "_udp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "_udp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "_udp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv_sub" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv_sub" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_snd" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__proc_udp_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__proc_udp_api" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_init" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_init" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_tmout" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_tmout" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__tcpudp_cksum" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__tcpudp_cksum" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_cb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_cb" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__cksum" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_big.lib(cksum_rx_little)"
+W0561320:Duplicate symbol "__cksum" in "src\r_t4_rx\lib\T4_Library_rxv1_ether_little.lib(cksum_rx_little)"
+W0561320:Duplicate symbol "__ether_proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_rcv_arp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_resolve" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_arp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_ip" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_add" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_del" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_init" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ether_p_rcv_buff" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ether)"
+W0561320:Duplicate symbol "__ip_rcv_hdr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd_icmp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_ipadd_proto" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_multicast" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_broadcast" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "_data_link_buf_ptr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_tbl" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_head" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(ip)"
+W0561320:Duplicate symbol "_R_t4_version" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(T4_Version)"
+W0561320:Duplicate symbol "_net2hl_yn_xn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__process_tcpip" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_acpt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_con" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_sht_cls" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_snddt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_rcvdt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cpy_rwdat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_stat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_rst" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_syn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_ack" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_opt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_proc_data" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_fin" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_swin_updt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__proc_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cancel_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_clr_rtq" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_return_listen" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_tmout_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_is_tcb_queue_over" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_call_callback" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_recv_polling" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_callback_info" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "_head_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tx_hdr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_pre_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp)"
+W0561320:Duplicate symbol "_tcpudp_open" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_close" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getRAMsize_sub" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTcpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getUdpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getIpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTblRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_get_ramsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_acp_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_con_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_sht_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_cls_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_req" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_clr_req" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_read_stat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_set_mss" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "__ether_arp_tbl" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "_udp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "_udp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv_sub" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__proc_udp_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_init" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_tmout" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__tcpudp_cksum" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__udp_cb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(udp)"
+W0561320:Duplicate symbol "__cksum" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_big.lib(cksum_rx_little)"
+W0561320:Duplicate symbol "__ether_proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_rcv_arp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_resolve" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_arp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd_ip" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_add" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_del" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_arp_init" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ether_p_rcv_buff" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ether)"
+W0561320:Duplicate symbol "__ip_rcv_hdr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_snd_icmp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_ipadd_proto" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_multicast" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ip_check_broadcast" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "_data_link_buf_ptr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_tbl" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "__ch_info_head" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(ip)"
+W0561320:Duplicate symbol "_R_t4_version" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(T4_Version)"
+W0561320:Duplicate symbol "_net2hl_yn_xn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__process_tcpip" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_acpt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_con" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_sht_cls" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_snddt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_rcvdt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cpy_rwdat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_stat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_rst" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_syn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_ack" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_opt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_proc_data" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_rcv_fin" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_swin_updt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__proc_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_cancel_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_clr_rtq" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_return_listen" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_check_tmout_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_is_tcb_queue_over" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_call_callback" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_recv_polling" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_init_callback_info" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "_head_tcb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tx_hdr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "__tcp_pre_timer_cnt" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp)"
+W0561320:Duplicate symbol "_tcpudp_open" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_close" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getRAMsize_sub" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTcpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getUdpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getIpRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__getTblRAMsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcpudp_get_ramsize" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_acp_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_con_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_sht_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_cls_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_req" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__tcp_clr_req" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_read_stat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_force_clr" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_tcp_set_mss" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "__ether_arp_tbl" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(tcp_api)"
+W0561320:Duplicate symbol "_udp_rcv_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "_udp_snd_dat" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "_udp_can_cep" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_rcv_sub" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_snd" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_slp" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_wup" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__proc_udp_api" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_init" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_tmout" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__tcpudp_cksum" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_api_type_to_fn" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_cepid_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_check_len_arg" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__udp_cb" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(udp)"
+W0561320:Duplicate symbol "__cksum" in "src\r_t4_rx\lib\T4_Library_rxv2_ether_little.lib(cksum_rx_little)"
+W0561100:Cannot find "PResetPRG" specified in option "start"
+W0561100:Cannot find "C$INIT" specified in option "start"
+W0561100:Cannot find "C$VTBL" specified in option "start"
+W0561100:Cannot find "PIntPRG" specified in option "start"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SI
+                                  00000020  0000041f       400   4
+SU
+                                  00000420  0000141f      1000   4
+B_1
+                                  00001420  000030aa      1c8b   1
+R_1
+                                  000030ab  00003143        99   1
+B_2
+                                  00003144  000045a1      145e   2
+R_2
+                                  000045a2  000045a3         2   2
+B
+                                  000045a4  0000fc93      b6f0   4
+R
+                                  0000fc94  000102af       61c   4
+B_ETHERNET_BUFFERS_1
+                                  00030000  000317ff      1800   1
+B_RX_DESC_1
+                                  00031800  0003181f        20   1
+B_TX_DESC_1
+                                  00031820  0003183f        20   1
+$ADDR_C_120040
+                                  00120040  00120043         4   1
+$ADDR_C_120048
+                                  00120048  0012004b         4   1
+$ADDR_C_120050
+                                  00120050  0012006f        20   1
+C_1
+                                  ffc00100  ffc002ae       1af   1
+C_2
+                                  ffc002b0  ffc00553       2a4   2
+C
+                                  ffc00554  ffc01153       c00   4
+C$DSEC
+                                  ffc01154  ffc01177        24   4
+C$BSEC
+                                  ffc01178  ffc0118f        18   4
+C$VECT
+                                  ffc01190  ffc0158f       400   4
+D_1
+                                  ffc01590  ffc01628        99   1
+D_2
+                                  ffc0162a  ffc0162b         2   2
+D
+                                  ffc0162c  ffc01c47       61c   4
+P
+                                  ffc01c48  ffc115b5      f96e   1
+W_1
+                                  ffc115b6  ffc115d2        1d   1
+W_2
+                                  ffc115d4  ffc115f3        20   2
+W
+                                  ffc115f4  ffc115f4         0   4
+L
+                                  ffc115f4  ffc11e08       815   4
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00011ad0 Byte(s)
+ROMDATA SECTION:  00002440 Byte(s)
+PROGRAM SECTION:  0000f96e Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=SI
+FILE=DefaultBuild\resetprg.obj
+                                  00000020  0000041f       400
+
+SECTION=SU
+FILE=DefaultBuild\resetprg.obj
+                                  00000420  0000141f      1000
+
+SECTION=B_1
+FILE=DefaultBuild\lowsrc.obj
+                                  00001420  00001447        28
+  _flmod
+                                  00001420        14   data ,g         * 
+  _sml_buf
+                                  00001434        14   data ,g         * 
+FILE=DefaultBuild\r_bsp_software_interrupt.obj
+                                  00001448  0000144f         8
+  _s_bsp_swint_buf_used
+                                  00001448         2   data ,l         * 
+  _s_bsp_swint_buf_top
+                                  0000144a         2   data ,l         * 
+  _s_bsp_swint_buf_bottom
+                                  0000144c         2   data ,l         * 
+  _s_bsp_swint_nested_int_status
+                                  0000144e         2   data ,l         * 
+FILE=DefaultBuild\ether_callback.obj
+                                  00001450  00001453         4
+  _magic_packet_detect
+                                  00001450         2   data ,g         * 
+  _link_detect
+                                  00001452         2   data ,g         * 
+FILE=DefaultBuild\t4_driver.obj
+                                  00001454  00001454         1
+  _tcpip_flag
+                                  00001454         1   data ,g         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  00001455  0000146c        18
+  _transfer_enable_flag
+                                  00001455         2   data ,l         * 
+  _mpd_flag
+                                  00001457         2   data ,l         * 
+  _mac_addr_buf
+                                  00001459         c   data ,l         * 
+  _lchng_flag
+                                  00001465         2   data ,l         * 
+  _promiscuous_mode
+                                  00001467         2   data ,l         * 
+  _etherc_edmac_power_cont
+                                  00001469         4   data ,l         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  0000146d  00001770       304
+  _dns_buffer
+                                  0000146d       200   data ,l         * 
+  _name_table
+                                  0000166d       104   data ,g         * 
+FILE=DefaultBuild\r_sci_rx.obj
+                                  00001771  00002094       924
+  _ch1_tx_buf
+                                  00001771        50   data ,l         * 
+  _ch1_rx_buf
+                                  000017c1       834   data ,l         * 
+  _ch2_tx_buf
+                                  00001ff5        50   data ,l         * 
+  _ch2_rx_buf
+                                  00002045        50   data ,l         * 
+FILE=DefaultBuild\globalVar.obj
+                                  00002095  000028a4       810
+  _vibrRtnRAWData
+                                  00002095       807   data ,g         * 
+  _EDSRtnRAWData
+                                  0000289c         9   data ,g         * 
+FILE=DefaultBuild\LeadWell_Vibr.obj
+                                  000028a5  000030aa       806
+  _HLvibrateData
+                                  000028a5       800   data ,g         * 
+  _HLTempData
+                                  000030a5         6   data ,g         * 
+
+SECTION=R_1
+FILE=DefaultBuild\ether_callback.obj
+                                  000030ab  000030ab         1
+  _pause_enable
+                                  000030ab         1   data ,g         * 
+FILE=DefaultBuild\config_tcpudp.obj
+                                  000030ac  000030dd        32
+  __tcp_dack
+                                  000030ac         2   data ,g         * 
+  _tcpudp_env
+                                  000030ae        18   data ,g         * 
+  __myethaddr
+                                  000030c6         c   data ,g         * 
+  _user_name
+                                  000030d2         6   data ,g         * 
+  _user_passwd
+                                  000030d8         6   data ,g         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  000030de  000030e0         3
+  _is_entry
+                                  000030de         1   data ,l         * 
+  _pause_frame_enable
+                                  000030df         2   data ,l         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  000030e1  000030e8         8
+  _dnsaddr1
+                                  000030e1         4   data ,g         * 
+  _dnsaddr2
+                                  000030e5         4   data ,g         * 
+FILE=DefaultBuild\r_byteq.obj
+                                  000030e9  000030e9         1
+  _qcb_init$1
+                                  000030e9         1   data ,l         * 
+FILE=DefaultBuild\dsp_process.obj
+                                  000030ea  000030ea         1
+  _idx_buf_s12ad
+                                  000030ea         1   data ,l         * 
+FILE=DefaultBuild\globalVar.obj
+                                  000030eb  000030f1         7
+  _ETHERNET_RDY
+                                  000030eb         2   data ,g         * 
+  _DATA_RDY
+                                  000030ed         5   data ,g         * 
+FILE=xfiles
+                                  000030f2  00003141        50
+  _ebuf
+                                  000030f2        50   data ,l         * 
+FILE=tcp
+                                  00003142  00003142         1
+  __process_flag$1
+                                  00003142         1   data ,l         * 
+FILE=xstate
+                                  00003143  00003143         1
+  __Mbcurmax
+                                  00003143         1   data ,g         * 
+
+SECTION=B_2
+FILE=DefaultBuild\r_bsp_cpu.obj
+                                  00003144  0000314b         8
+  _s_protect_counters
+                                  00003144         8   data ,l         * 
+FILE=DefaultBuild\t4_driver.obj
+                                  0000314c  0000314f         4
+  _tcpudp_time_cnt
+                                  0000314c         2   data ,g         * 
+  _wait_timer
+                                  0000314e         2   data ,g         * 
+FILE=DefaultBuild\phy.obj
+                                  00003150  00003153         4
+  _local_advertise
+                                  00003150         4   data ,l         * 
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  00003154  00003d53       c00
+  _gs_fft_twiddles
+                                  00003154       c00   data ,l         * 
+FILE=DefaultBuild\globalVar.obj
+                                  00003d54  0000455f       80c
+  _vibrateData
+                                  00003d54       800   data ,g         * 
+  _EDSData
+                                  00004554         6   data ,g         * 
+  _TempData
+                                  0000455a         6   data ,g         * 
+FILE=tcp
+                                  00004560  000045a1        42
+  __tx_hdr
+                                  00004560        3c   data ,g         * 
+  __tcp_timer_cnt
+                                  0000459c         2   data ,g         * 
+  __tcp_pre_timer_cnt
+                                  0000459e         2   data ,g         * 
+  _port$3
+                                  000045a0         2   data ,l         * 
+
+SECTION=R_2
+FILE=DefaultBuild\r_dns_client.obj
+                                  000045a2  000045a3         2
+  _TRANSACTION_ID
+                                  000045a2         2   data ,l         * 
+
+SECTION=B
+FILE=DefaultBuild\lowsrc.obj
+                                  000045a4  000045f3        50
+  __Files
+                                  000045a4        50   data ,g         * 
+FILE=DefaultBuild\mcu_locks.obj
+                                  000045f4  000047cf       1dc
+  _g_bsp_Locks
+                                  000045f4       1dc   data ,g         * 
+FILE=DefaultBuild\r_bsp_interrupts.obj
+                                  000047d0  0000495b       18c
+  _g_bsp_vectors
+                                  000047d0       18c   data ,l         * 
+FILE=DefaultBuild\r_bsp_software_interrupt.obj
+                                  0000495c  00004a3b        e0
+  _g_bsp_swint_access_ctrl
+                                  0000495c         8   data ,g         * 
+  _s_bsp_swint_task
+                                  00004964        d8   data ,l         * 
+FILE=DefaultBuild\sbrk.obj
+                                  00004a3c  00004e3f       404
+  __s1ptr
+                                  00004a3c         4   data ,g         * 
+  _s_heap_area
+                                  00004a40       400   data ,l         * 
+FILE=DefaultBuild\t4_driver.obj
+                                  00004e40  00004f03        c4
+  _t4_stat
+                                  00004e40        c0   data ,g         * 
+  _err_buf_ptr
+                                  00004f00         4   data ,g         * 
+FILE=DefaultBuild\r_cmt_rx.obj
+                                  00004f04  00004f23        20
+  _g_cmt_modes
+                                  00004f04        10   data ,l         * 
+  _g_cmt_callbacks
+                                  00004f14        10   data ,l         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  00004f24  00004f2b         8
+  _cb_func
+                                  00004f24         8   data ,l         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  00004f2c  0000506b       140
+  _dns_packet
+                                  00004f2c        24   data ,l         * 
+  _dns_mng
+                                  00004f50       114   data ,g         * 
+  _dns$1
+                                  00005064         8   data ,l         * 
+FILE=DefaultBuild\r_byteq.obj
+                                  0000506c  0000509b        30
+  _g_qcb
+                                  0000506c        30   data ,l         * 
+FILE=DefaultBuild\Sensor.obj
+                                  0000509c  000050a3         8
+  _g_my_sci_handle_ch1
+                                  0000509c         4   data ,l         * 
+  _g_my_sci_handle_ch2
+                                  000050a0         4   data ,l         * 
+FILE=DefaultBuild\dsp_process.obj
+                                  000050a4  000050a7         4
+  _gs_request_s12ad
+                                  000050a4         4   data ,l         * 
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  000050a8  0000a06b      4fc4
+  _buf_freq
+                                  000050a8      1000   data ,l         * 
+  _buf_inverse
+                                  000060a8      1000   data ,l         * 
+  _ntwb
+                                  000070a8         4   data ,l         * 
+  _nbrb
+                                  000070ac         4   data ,l         * 
+  _nwkb
+                                  000070b0         4   data ,l         * 
+  _fft_twiddles
+                                  000070b4      1800   data ,l         * 
+  _fft_bitrev
+                                  000088b4       3f8   data ,l         * 
+  _gs_fft_buf
+                                  00008cac      1000   data ,l         * 
+  _gs_fft_bitrev
+                                  00009cac       3c0   data ,l         * 
+FILE=DefaultBuild\EthernetProcess.obj
+                                  0000a06c  0000f46f      5404
+  _tcpudp_work
+                                  0000a06c      5400   data ,l         * 
+  _tcpPacket
+                                  0000f46c         4   data ,g         * 
+FILE=DefaultBuild\globalVar.obj
+                                  0000f470  0000fc6f       800
+  _frequencyData
+                                  0000f470       800   data ,g         * 
+FILE=tcp
+                                  0000fc70  0000fc77         8
+  __tcp_tcb
+                                  0000fc70         4   data ,g         * 
+  _head_tcb
+                                  0000fc74         4   data ,g         * 
+FILE=tcp_api
+                                  0000fc78  0000fc7b         4
+  __ether_arp_tbl
+                                  0000fc78         4   data ,g         * 
+FILE=udp
+                                  0000fc7c  0000fc7f         4
+  __udp_cb
+                                  0000fc7c         4   data ,g         * 
+FILE=_errno
+                                  0000fc80  0000fc83         4
+  __errno
+                                  0000fc80         4   data ,g         * 
+FILE=ether
+                                  0000fc84  0000fc87         4
+  __ether_p_rcv_buff
+                                  0000fc84         4   data ,g         * 
+FILE=ip
+                                  0000fc88  0000fc93         c
+  _data_link_buf_ptr
+                                  0000fc88         4   data ,g         * 
+  __ch_info_tbl
+                                  0000fc8c         4   data ,g         * 
+  __ch_info_head
+                                  0000fc90         4   data ,g         * 
+
+SECTION=R
+FILE=DefaultBuild\lowsrc.obj
+                                  0000fc94  0000fca7        14
+  _env_list
+                                  0000fc94        10   data ,g         * 
+  _environ
+                                  0000fca4         4   data ,g         * 
+FILE=DefaultBuild\sbrk.obj
+                                  0000fca8  0000fcab         4
+  _sp_brk
+                                  0000fca8         4   data ,l         * 
+FILE=DefaultBuild\timer.obj
+                                  0000fcac  0000fcaf         4
+  _cmt_channel
+                                  0000fcac         4   data ,l         * 
+FILE=DefaultBuild\config_tcpudp.obj
+                                  0000fcb0  0000ff4f       2a0
+  _tcp_crep
+                                  0000fcb0        d8   data ,g         * 
+  _tcp_ccep
+                                  0000fd88       1b0   data ,g         * 
+  __tcp_initial_seqno
+                                  0000ff38         8   data ,g         * 
+  _udp_ccep
+                                  0000ff40        10   data ,g         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  0000ff50  0000ff5f        10
+  _papp_rx_desc
+                                  0000ff50         8   data ,l         * 
+  _papp_tx_desc
+                                  0000ff58         8   data ,l         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  0000ff60  0000ff67         8
+  _dnsaddr_tbl
+                                  0000ff60         8   data ,l         * 
+FILE=DefaultBuild\r_sci_rx64m_data.obj
+                                  0000ff68  0000ffa7        40
+  _ch1_ctrl
+                                  0000ff68        20   data ,g         * 
+  _ch2_ctrl
+                                  0000ff88        20   data ,g         * 
+FILE=DefaultBuild\Sensor.obj
+                                  0000ffa8  0000ffb7        10
+  _p_EDSRtnRAWData
+                                  0000ffa8         4   data ,g         * 
+  _p_EDSData
+                                  0000ffac         4   data ,g         * 
+  _p_vibrRtnRAWData
+                                  0000ffb0         4   data ,g         * 
+  _p_vibrateData
+                                  0000ffb4         4   data ,g         * 
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  0000ffb8  0001000f        58
+  _vtime
+                                  0000ffb8         8   data ,l         * 
+  _vfreq
+                                  0000ffc0         8   data ,l         * 
+  _vout
+                                  0000ffc8         8   data ,l         * 
+  _h
+                                  0000ffd0        14   data ,l         * 
+  _gs_fft_time
+                                  0000ffe4         8   data ,l         * 
+  _gs_fft_freq
+                                  0000ffec         8   data ,l         * 
+  _gs_fft_mag
+                                  0000fff4         8   data ,l         * 
+  _gs_fft_handle
+                                  0000fffc        14   data ,l         * 
+FILE=DefaultBuild\r_s12ad_rx64m.obj
+                                  00010010  0001002f        20
+  _g_dcb
+                                  00010010        20   data ,g         * 
+FILE=xfiles
+                                  00010030  00010107        d8
+  __Stdin
+                                  00010030        48   data ,g         * 
+  __Stdout
+                                  00010078        48   data ,g         * 
+  __Stderr
+                                  000100c0        48   data ,g         * 
+FILE=xprintf
+                                  00010108  0001010b         4
+  _stderr
+                                  00010108         4   data ,g         * 
+FILE=sincosfsub
+                                  0001010c  00010147        3c
+  _sinf_coeff
+                                  0001010c        10   data ,l         * 
+  _cosf_coeff
+                                  0001011c        10   data ,l         * 
+  _pi4ptr_table
+                                  0001012c         c   data ,l         * 
+  _sub_table
+                                  00010138        10   data ,l         * 
+FILE=xctype
+                                  00010148  0001014f         8
+  __Ctype
+                                  00010148         4   data ,g         * 
+  __Tls_setup__Ctype
+                                  0001014c         4   data ,g         * 
+FILE=malloc
+                                  00010150  00010157         8
+  __Aldata
+                                  00010150         8   data ,g         * 
+FILE=xstate
+                                  00010158  0001019f        48
+  __Tls_setup__Mbcurmax
+                                  00010158         4   data ,g         * 
+  __Mbstate
+                                  0001015c        40   data ,g         * 
+  __Tls_setup__Mbstate
+                                  0001019c         4   data ,g         * 
+FILE=localeco
+                                  000101a0  000101f3        54
+  __Locale
+                                  000101a0        50   data ,g         * 
+  __Tls_setup__Locale
+                                  000101f0         4   data ,g         * 
+FILE=xwcstate
+                                  000101f4  00010237        44
+  __Wcstate
+                                  000101f4        40   data ,g         * 
+  __Tls_setup__Wcstate
+                                  00010234         4   data ,g         * 
+FILE=xfvalues
+                                  00010238  000102af        78
+  __FDenorm
+                                  00010238        10   data ,g         * 
+  __FEps
+                                  00010248        10   data ,g         * 
+  __FHugeval
+                                  00010258        10   data ,g         * 
+  __FInf
+                                  00010268        10   data ,g         * 
+  __FNan
+                                  00010278        10   data ,g         * 
+  __FSnan
+                                  00010288        10   data ,g         * 
+  __FRteps
+                                  00010298        10   data ,g         * 
+  __FXbig
+                                  000102a8         4   data ,g         * 
+  __FZero
+                                  000102ac         4   data ,g         * 
+
+SECTION=B_ETHERNET_BUFFERS_1
+FILE=DefaultBuild\r_ether_rx.obj
+                                  00030000  000317ff      1800
+  _ether_buffers
+                                  00030000      1800   data ,l         * 
+
+SECTION=B_RX_DESC_1
+FILE=DefaultBuild\r_ether_rx.obj
+                                  00031800  0003181f        20
+  _rx_descriptors
+                                  00031800        20   data ,l         * 
+
+SECTION=B_TX_DESC_1
+FILE=DefaultBuild\r_ether_rx.obj
+                                  00031820  0003183f        20
+  _tx_descriptors
+                                  00031820        20   data ,l         * 
+
+SECTION=$ADDR_C_120040
+FILE=DefaultBuild\vecttbl.obj
+                                  00120040  00120043         4
+  ___SPCCreg
+                                  00120040         4   data ,g         * 
+
+SECTION=$ADDR_C_120048
+FILE=DefaultBuild\vecttbl.obj
+                                  00120048  0012004b         4
+  ___TMEFreg
+                                  00120048         4   data ,g         * 
+
+SECTION=$ADDR_C_120050
+FILE=DefaultBuild\vecttbl.obj
+                                  00120050  0012006f        20
+  ___OSIS1reg
+                                  00120050         4   data ,g         * 
+  ___OSIS2reg
+                                  00120054         4   data ,g         * 
+  ___OSIS3reg
+                                  00120058         4   data ,g         * 
+  ___OSIS4reg
+                                  0012005c         4   data ,g         * 
+  ___TMINFreg
+                                  00120060         4   data ,g         * 
+  ___MDEreg
+                                  00120064         4   data ,g         * 
+  ___OFS0reg
+                                  00120068         4   data ,g         * 
+  ___OFS1reg
+                                  0012006c         4   data ,g         * 
+
+SECTION=C_1
+FILE=DefaultBuild\config_tcpudp.obj
+                                  ffc00100  ffc00127        28
+  __t4_channel_num
+                                  ffc00100         1   data ,g         * 
+  ___multi_TTL
+                                  ffc00101         2   data ,g         * 
+  __udp_enable_zerochecksum
+                                  ffc00103         2   data ,g         * 
+  _peer_dial
+                                  ffc00105         6   data ,g         * 
+  _at_commands
+                                  ffc0010b        1d   data ,g         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  ffc00128  ffc001cb        a4
+  _pause_resolution
+                                  ffc00128        50   data ,l         * 
+  _ether_ch_0
+                                  ffc00178        22   data ,l         * 
+  _ether_ch_1
+                                  ffc0019a        22   data ,l         * 
+  _g_eth_control_ch
+                                  ffc001bc        10   data ,g         * 
+FILE=xprintf
+                                  ffc001cc  ffc001d5         a
+  _fchar$1
+                                  ffc001cc         a   data ,l         * 
+FILE=ether
+                                  ffc001d6  ffc001e6        11
+  _ip_broadcast$1
+                                  ffc001d6         4   data ,l         * 
+  _ip_broadcast$4
+                                  ffc001da         4   data ,l         * 
+  _eth_broadcast$3
+                                  ffc001de         6   data ,l         * 
+  _eth_multi_addr$2
+                                  ffc001e4         3   data ,l         * 
+FILE=xputtxt
+                                  ffc001e7  ffc0028b        a5
+  _spaces
+                                  ffc001e7        21   data ,l         * 
+  _zeroes
+                                  ffc00208        21   data ,l         * 
+  _asterisk
+                                  ffc00229        21   data ,l         * 
+  _plus
+                                  ffc0024a        21   data ,l         * 
+  _minus
+                                  ffc0026b        21   data ,l         * 
+FILE=xlitob
+                                  ffc0028c  ffc002ad        22
+  _ldigs
+                                  ffc0028c        11   data ,l         * 
+  _udigs
+                                  ffc0029d        11   data ,l         * 
+FILE=localeco
+                                  ffc002ae  ffc002ae         1
+  _null
+                                  ffc002ae         1   data ,l         * 
+
+SECTION=C_2
+FILE=DefaultBuild\r_bsp_cpu.obj
+                                  ffc002b0  ffc002b5         6
+  _s_prcr_masks
+                                  ffc002b0         6   data ,l         * 
+FILE=DefaultBuild\config_tcpudp.obj
+                                  ffc002b6  ffc002cd        18
+  ___tcprepn
+                                  ffc002b6         2   data ,g         * 
+  ___tcpcepn
+                                  ffc002b8         2   data ,g         * 
+  __tcp_mss
+                                  ffc002ba         4   data ,g         * 
+  __tcp_2msl
+                                  ffc002be         4   data ,g         * 
+  __tcp_rt_tmo_rst
+                                  ffc002c2         4   data ,g         * 
+  ___udpcepn
+                                  ffc002c6         2   data ,g         * 
+  __ip_tblcnt
+                                  ffc002c8         4   data ,g         * 
+  _ppp_auth
+                                  ffc002cc         2   data ,g         * 
+FILE=DefaultBuild\r_sci_rx64m_data.obj
+                                  ffc002ce  ffc00303        36
+  _async_baud
+                                  ffc002ce        36   data ,g         * 
+FILE=r_dsp_FFTInit_cf32f32
+                                  ffc00304  ffc0031d        1a
+  _b_seed
+                                  ffc00304        1a   data ,l         * 
+FILE=r_dsp_FFTInit_f32cf32
+                                  ffc0031e  ffc00337        1a
+  _b_seed
+                                  ffc0031e        1a   data ,l         * 
+FILE=r_dsp_FFTInit_i16ci32
+                                  ffc00338  ffc00351        1a
+  _b_seed
+                                  ffc00338        1a   data ,l         * 
+FILE=xctype
+                                  ffc00352  ffc00553       202
+  _ctyp_tab
+                                  ffc00352       202   data ,l         * 
+
+SECTION=C
+FILE=DefaultBuild\dbsct.obj
+                                  ffc00554  ffc0056b        18
+  __CTBL
+                                  ffc00554        18   data ,g         * 
+FILE=DefaultBuild\r_cmt_rx.obj
+                                  ffc0056c  ffc0058b        20
+  _g_cmt_channels
+                                  ffc0056c        10   data ,l         * 
+  _g_cmt_clock_dividers
+                                  ffc0057c        10   data ,l         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc0058c  ffc00663        d8
+  _dns_proc_table
+                                  ffc0058c        d8   data ,l         * 
+FILE=DefaultBuild\r_sci_rx64m_data.obj
+                                  ffc00664  ffc0070f        ac
+  _ch1_rom
+                                  ffc00664        3c   data ,g         * 
+  _ch2_rom
+                                  ffc006a0        3c   data ,g         * 
+  _g_handles
+                                  ffc006dc        34   data ,g         * 
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  ffc00710  ffc00f0f       800
+  _rFFT_buf_time
+                                  ffc00710       400   data ,g         * 
+  _rfft_tbl_window
+                                  ffc00b10       400   data ,g         * 
+FILE=DefaultBuild\r_s12ad_rx64m.obj
+                                  ffc00f10  ffc0103f       130
+  _dreg0_ptrs
+                                  ffc00f10        6c   data ,g         * 
+  _dreg1_ptrs
+                                  ffc00f7c        6c   data ,g         * 
+  _sreg0_ptrs
+                                  ffc00fe8        2c   data ,g         * 
+  _sreg1_ptrs
+                                  ffc01014        2c   data ,g         * 
+FILE=_nfiles
+                                  ffc01040  ffc01043         4
+  __nfiles
+                                  ffc01040         4   data ,g         * 
+FILE=tcp
+                                  ffc01044  ffc0105b        18
+  _functbl_tcp_api$2
+                                  ffc01044        18   data ,l         * 
+FILE=xfoprep
+                                  ffc0105c  ffc010a3        48
+  _init$1
+                                  ffc0105c        48   data ,l         * 
+FILE=xprintf
+                                  ffc010a4  ffc010bb        18
+  _fbit$2
+                                  ffc010a4        18   data ,l         * 
+FILE=xfopen
+                                  ffc010bc  ffc010cb        10
+  _rwacc$1
+                                  ffc010bc        10   data ,l         * 
+FILE=r_costable
+                                  ffc010cc  ffc010eb        20
+  ___cos_coeff
+                                  ffc010cc        20   data ,g         * 
+FILE=xldtob
+                                  ffc010ec  ffc01103        18
+  _pows
+                                  ffc010ec        18   data ,l         * 
+FILE=_sbrk_si
+                                  ffc01104  ffc01107         4
+  __sbrk_size
+                                  ffc01104         4   data ,g         * 
+FILE=floatval
+                                  ffc01108  ffc0112f        28
+  __FLT_MAX_VAL
+                                  ffc01108         0   none ,g         * 
+  __FLT_MIN_VAL
+                                  ffc0110c         0   none ,g         * 
+  __DBL_MAX_VAL
+                                  ffc01110         0   none ,g         * 
+  __DBL_MIN_VAL
+                                  ffc01118         0   none ,g         * 
+  __LDBL_MAX_VAL
+                                  ffc01120         0   none ,g         * 
+  __LDBL_MIN_VAL
+                                  ffc01128         0   none ,g         * 
+FILE=_const
+                                  ffc01130  ffc01153        24
+  __IFNAND
+                                  ffc01130         0   none ,g         * 
+  __IFINFD
+                                  ffc01138         0   none ,g         * 
+  __NIFINFD
+                                  ffc01140         0   none ,g         * 
+  __IFNANS
+                                  ffc01148         0   none ,g         * 
+  __IFINFS
+                                  ffc0114c         0   none ,g         * 
+  __NIFINFS
+                                  ffc01150         0   none ,g         * 
+
+SECTION=C$DSEC
+FILE=DefaultBuild\dbsct.obj
+                                  ffc01154  ffc01177        24
+  __DTBL
+                                  ffc01154        24   data ,g         * 
+
+SECTION=C$BSEC
+FILE=DefaultBuild\dbsct.obj
+                                  ffc01178  ffc0118f        18
+  __BTBL
+                                  ffc01178        18   data ,g         * 
+
+SECTION=C$VECT
+FILE=DefaultBuild\resetprg.obj
+                                  ffc01190  ffc0158f       400
+
+SECTION=D_1
+FILE=DefaultBuild\ether_callback.obj
+                                  ffc01590  ffc01590         1
+FILE=DefaultBuild\config_tcpudp.obj
+                                  ffc01591  ffc015c2        32
+FILE=DefaultBuild\r_ether_rx.obj
+                                  ffc015c3  ffc015c5         3
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc015c6  ffc015cd         8
+FILE=DefaultBuild\r_byteq.obj
+                                  ffc015ce  ffc015ce         1
+FILE=DefaultBuild\dsp_process.obj
+                                  ffc015cf  ffc015cf         1
+FILE=DefaultBuild\globalVar.obj
+                                  ffc015d0  ffc015d6         7
+FILE=xfiles
+                                  ffc015d7  ffc01626        50
+FILE=tcp
+                                  ffc01627  ffc01627         1
+FILE=xstate
+                                  ffc01628  ffc01628         1
+
+SECTION=D_2
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc0162a  ffc0162b         2
+
+SECTION=D
+FILE=DefaultBuild\lowsrc.obj
+                                  ffc0162c  ffc0163f        14
+FILE=DefaultBuild\sbrk.obj
+                                  ffc01640  ffc01643         4
+FILE=DefaultBuild\timer.obj
+                                  ffc01644  ffc01647         4
+FILE=DefaultBuild\config_tcpudp.obj
+                                  ffc01648  ffc018e7       2a0
+FILE=DefaultBuild\r_ether_rx.obj
+                                  ffc018e8  ffc018f7        10
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc018f8  ffc018ff         8
+FILE=DefaultBuild\r_sci_rx64m_data.obj
+                                  ffc01900  ffc0193f        40
+FILE=DefaultBuild\Sensor.obj
+                                  ffc01940  ffc0194f        10
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  ffc01950  ffc019a7        58
+FILE=DefaultBuild\r_s12ad_rx64m.obj
+                                  ffc019a8  ffc019c7        20
+FILE=xfiles
+                                  ffc019c8  ffc01a9f        d8
+FILE=xprintf
+                                  ffc01aa0  ffc01aa3         4
+FILE=sincosfsub
+                                  ffc01aa4  ffc01adf        3c
+FILE=xctype
+                                  ffc01ae0  ffc01ae7         8
+FILE=malloc
+                                  ffc01ae8  ffc01aef         8
+FILE=xstate
+                                  ffc01af0  ffc01b37        48
+FILE=localeco
+                                  ffc01b38  ffc01b8b        54
+FILE=xwcstate
+                                  ffc01b8c  ffc01bcf        44
+FILE=xfvalues
+                                  ffc01bd0  ffc01c47        78
+
+SECTION=P
+FILE=DefaultBuild\r_cg_hardware_setup.obj
+                                  ffc01c48  ffc01c82        3b
+  _r_undefined_exception
+                                  ffc01c48         1   func ,g         * 
+  _R_Systeminit
+                                  ffc01c49        3a   func ,g         * 
+FILE=DefaultBuild\r_smc_cgc.obj
+                                  ffc01c83  ffc01c86         4
+  _R_CGC_Create
+                                  ffc01c83         4   func ,g         * 
+FILE=DefaultBuild\r_smc_cgc_user.obj
+                                  ffc01c87  ffc01c87         1
+  _R_CGC_Create_UserInit
+                                  ffc01c87         1   func ,g         * 
+FILE=DefaultBuild\r_smc_interrupt.obj
+                                  ffc01c88  ffc01c88         1
+  _R_Interrupt_Create
+                                  ffc01c88         1   func ,g         * 
+FILE=DefaultBuild\hwsetup.obj
+                                  ffc01c89  ffc01c9d        15
+  _hardware_setup
+                                  ffc01c89         d   func ,g         * 
+  _output_ports_configure
+                                  ffc01c96         2   func ,l         * 
+  _interrupts_configure
+                                  ffc01c98         2   func ,l         * 
+  _peripheral_modules_enable
+                                  ffc01c9a         4   func ,l         * 
+FILE=DefaultBuild\lowlvl.obj
+                                  ffc01c9e  ffc01cbf        22
+  _charput
+                                  ffc01c9e        10   func ,g         * 
+  _charget
+                                  ffc01cae        12   func ,g         * 
+FILE=DefaultBuild\lowsrc.obj
+                                  ffc01cc0  ffc01e5d       19e
+  _init_iolib
+                                  ffc01cc0        84   func ,g         * 
+  _close_all
+                                  ffc01d44        2a   func ,g         * 
+  _open
+                                  ffc01d6e        67   func ,g         * 
+  _close
+                                  ffc01dd5         3   func ,g         * 
+  _write
+                                  ffc01dd8        42   func ,g         * 
+  _read
+                                  ffc01e1a        40   func ,g         * 
+  _lseek
+                                  ffc01e5a         4   func ,g         * 
+FILE=DefaultBuild\resetprg.obj
+                                  ffc01e5e  ffc01ec1        64
+  _PowerON_Reset_PC
+                                  ffc01e5e        64   entry,g         * 
+FILE=DefaultBuild\r_bsp_common.obj
+                                  ffc01ec2  ffc01f92        d1
+  _R_BSP_GetVersion
+                                  ffc01ec2         6   func ,g         * 
+  _R_BSP_GetIClkFreqHz
+                                  ffc01ec8         4   func ,g         * 
+  _R_BSP_SoftwareDelay
+                                  ffc01ecc        c7   func ,g         * 
+FILE=DefaultBuild\r_bsp_cpu.obj
+                                  ffc01f93  ffc0211f       18d
+  _R_BSP_InterruptsDisable
+                                  ffc01f93         9   func ,g         * 
+  _R_BSP_InterruptsEnable
+                                  ffc01f9c         9   func ,g         * 
+  _R_BSP_CpuInterruptLevelRead
+                                  ffc01fa5         8   func ,g         * 
+  _R_BSP_CpuInterruptLevelWrite
+                                  ffc01fad        79   func ,g         * 
+  _R_BSP_RegisterProtectEnable
+                                  ffc02026        67   func ,g         * 
+  _R_BSP_RegisterProtectDisable
+                                  ffc0208d        5d   func ,g         * 
+  _R_BSP_SoftwareReset
+                                  ffc020ea        11   func ,g         * 
+  _bsp_register_protect_open
+                                  ffc020fb        12   func ,g         * 
+  _bsp_ram_initialize
+                                  ffc0210d        13   func ,g         * 
+FILE=DefaultBuild\r_bsp_interrupts.obj
+                                  ffc02120  ffc024e3       3c4
+  _R_BSP_InterruptRequestEnable
+                                  ffc02120         e   func ,g         * 
+  _R_BSP_InterruptRequestDisable
+                                  ffc0212e         e   func ,g         * 
+  _bsp_interrupt_open
+                                  ffc0213c        26   func ,g         * 
+  _R_BSP_InterruptWrite
+                                  ffc02162        1c   func ,g         * 
+  _R_BSP_InterruptRead
+                                  ffc0217e        1b   func ,g         * 
+  _R_BSP_InterruptControl
+                                  ffc02199        79   func ,g         * 
+  _bsp_fit_interrupts_control
+                                  ffc02212        43   func ,l         * 
+  _bsp_gr_int_enable_disable
+                                  ffc02255       139   func ,l         * 
+  _excep_supervisor_inst_isr
+                                  ffc0238e        17   func ,g         * 
+  _excep_access_isr
+                                  ffc023a5        17   func ,g         * 
+  _excep_undefined_inst_isr
+                                  ffc023bc        17   func ,g         * 
+  _excep_floating_point_isr
+                                  ffc023d3        21   func ,g         * 
+  _non_maskable_isr
+                                  ffc023f4        bb   func ,g         * 
+  _undefined_interrupt_source_isr
+                                  ffc024af        17   func ,g         * 
+  _bus_error_isr
+                                  ffc024c6        1e   func ,g         * 
+FILE=DefaultBuild\r_bsp_locking.obj
+                                  ffc024e4  ffc0251d        3a
+  _R_BSP_SoftwareLock
+                                  ffc024e4        18   func ,g         * 
+  _R_BSP_SoftwareUnlock
+                                  ffc024fc         6   func ,g         * 
+  _R_BSP_HardwareLock
+                                  ffc02502         e   func ,g         * 
+  _R_BSP_HardwareUnlock
+                                  ffc02510         e   func ,g         * 
+FILE=DefaultBuild\r_bsp_software_interrupt.obj
+                                  ffc0251e  ffc02ad9       5bc
+  _R_BSP_SoftwareInterruptOpen
+                                  ffc0251e        b1   func ,g         * 
+  _R_BSP_SoftwareInterruptClose
+                                  ffc025cf        95   func ,g         * 
+  _R_BSP_SoftwareInterruptSetTask
+                                  ffc02664        99   func ,g         * 
+  _bsp_swint_get_interrupt_information
+                                  ffc026fd        4f   func ,l         * 
+  _bsp_swint_enable_interrupt
+                                  ffc0274c        15   func ,l         * 
+  _bsp_swint_disable_interrupt
+                                  ffc02761        15   func ,l         * 
+  _bsp_swint_set_interrupt_priority
+                                  ffc02776        7e   func ,l         * 
+  _bsp_swint_set_interrupt_request
+                                  ffc027f4        13   func ,l         * 
+  _bsp_swint_clear_interrupt_request
+                                  ffc02807        13   func ,l         * 
+  _bsp_swint_enable_nested_interrupt
+                                  ffc0281a         c   func ,l         * 
+  _bsp_swint_disable_nested_interrupt
+                                  ffc02826         c   func ,l         * 
+  _bsp_swint_clear_task
+                                  ffc02832        67   func ,l         * 
+  _bsp_swint_clear_all_task
+                                  ffc02899        9a   func ,l         * 
+  _bsp_swint_get_all_task_status
+                                  ffc02933        2a   func ,l         * 
+  _R_BSP_SoftwareInterruptControl
+                                  ffc0295d        76   func ,g         * 
+  _bsp_swint_get_access_control
+                                  ffc029d3        18   func ,l         * 
+  _bsp_swint_release_access_control
+                                  ffc029eb        16   func ,l         * 
+  _bsp_swint_dummy_task
+                                  ffc02a01         2   func ,l         * 
+  _bsp_swint_execute_task
+                                  ffc02a03        b9   func ,l         * 
+  _bsp_swint_isr
+                                  ffc02abc         f   func ,l         * 
+  _bsp_swint2_isr
+                                  ffc02acb         f   func ,l         * 
+FILE=DefaultBuild\r_rx_intrinsic_functions.obj
+                                  ffc02ada  ffc02b6e        95
+  _R_BSP_ChangeToUserMode
+                                  ffc02ada        20   func ,g         * 
+  _R_BSP_SetBPSW
+                                  ffc02afa         4   func ,g         * 
+  _R_BSP_GetBPSW
+                                  ffc02afe        11   func ,g         * 
+  _R_BSP_SetBPC
+                                  ffc02b0f         4   func ,g         * 
+  _R_BSP_GetBPC
+                                  ffc02b13        11   func ,g         * 
+  _R_BSP_SetEXTB
+                                  ffc02b24         4   func ,g         * 
+  _R_BSP_GetEXTB
+                                  ffc02b28        11   func ,g         * 
+  _R_BSP_MoveToAccHiLong
+                                  ffc02b39         4   func ,g         * 
+  _R_BSP_MoveToAccLoLong
+                                  ffc02b3d         4   func ,g         * 
+  _R_BSP_MoveFromAccHiLong
+                                  ffc02b41        11   func ,g         * 
+  _R_BSP_MoveFromAccMiLong
+                                  ffc02b52        11   func ,g         * 
+  _R_BSP_BitSet
+                                  ffc02b63         4   func ,g         * 
+  _R_BSP_BitClear
+                                  ffc02b67         4   func ,g         * 
+  _R_BSP_BitReverse
+                                  ffc02b6b         4   func ,g         * 
+FILE=DefaultBuild\sbrk.obj
+                                  ffc02b6f  ffc02b8f        21
+  _sbrk
+                                  ffc02b6f        21   func ,g         * 
+FILE=DefaultBuild\mcu_clocks.obj
+                                  ffc02b90  ffc02d39       1aa
+  _get_iclk_freq_hz
+                                  ffc02b90        8b   func ,g         * 
+  _mcu_clock_setup
+                                  ffc02c1b         2   func ,g         * 
+  _operating_frequency_set
+                                  ffc02c1d        52   func ,l         * 
+  _clock_source_select
+                                  ffc02c6f        cb   func ,l         * 
+FILE=DefaultBuild\mcu_init.obj
+                                  ffc02d3a  ffc02dbd        84
+  _bsp_non_existent_port_init
+                                  ffc02d3a        84   func ,g         * 
+FILE=DefaultBuild\mcu_interrupts.obj
+                                  ffc02dbe  ffc033a7       5ea
+  _bsp_interrupt_enable_disable
+                                  ffc02dbe        6a   func ,g         * 
+  _group_bl0_handler_isr
+                                  ffc02e28       203   func ,l         * 
+  _group_bl1_handler_isr
+                                  ffc0302b       17b   func ,l         * 
+  _group_al0_handler_isr
+                                  ffc031a6       148   func ,l         * 
+  _group_al1_handler_isr
+                                  ffc032ee        5a   func ,l         * 
+  _group_be0_handler_isr
+                                  ffc03348        60   func ,l         * 
+FILE=DefaultBuild\mcu_mapped_interrupts.obj
+                                  ffc033a8  ffc03593       1ec
+  _bsp_mapped_interrupt_open
+                                  ffc033a8       1ec   func ,g         * 
+FILE=DefaultBuild\Pin.obj
+                                  ffc03594  ffc03594         1
+  _R_Pins_Create
+                                  ffc03594         1   func ,g         * 
+FILE=DefaultBuild\ether_callback.obj
+                                  ffc03595  ffc03614        80
+  _callback_ether_regist
+                                  ffc03595        3d   func ,g         * 
+  _callback_ether
+                                  ffc035d2        13   func ,g         * 
+  _callback_wakeon_lan
+                                  ffc035e5        10   func ,l         * 
+  _callback_link_on
+                                  ffc035f5        10   func ,l         * 
+  _callback_link_off
+                                  ffc03605        10   func ,l         * 
+FILE=DefaultBuild\t4_driver.obj
+                                  ffc03615  ffc039bc       3a8
+  _lan_open
+                                  ffc03615        5c   func ,g         * 
+  _lan_close
+                                  ffc03671        2d   func ,g         * 
+  _ena_int
+                                  ffc0369e         a   func ,g         * 
+  _dis_int
+                                  ffc036a8         a   func ,g         * 
+  _rcv_buff_release
+                                  ffc036b2         7   func ,g         * 
+  _tcpudp_get_time
+                                  ffc036b9         9   func ,g         * 
+  _tcpudp_act_cyc
+                                  ffc036c2        1b   func ,g         * 
+  _lan_reset
+                                  ffc036dd        44   func ,g         * 
+  _udp_api_slp
+                                  ffc03721         c   func ,g         * 
+  _udp_api_wup
+                                  ffc0372d         1   func ,g         * 
+  _tcp_api_slp
+                                  ffc0372e         c   func ,g         * 
+  _tcp_api_wup
+                                  ffc0373a         1   func ,g         * 
+  _lan_read
+                                  ffc0373b        34   func ,g         * 
+  _lan_write
+                                  ffc0376f        6c   func ,g         * 
+  _report_error
+                                  ffc037db       16f   func ,g         * 
+  _timer_interrupt
+                                  ffc0394a        37   func ,g         * 
+  _lan_inthdr
+                                  ffc03981        14   func ,g         * 
+  _wait_Xms
+                                  ffc03995        15   func ,g         * 
+  _reset_timer
+                                  ffc039aa         a   func ,g         * 
+  _get_timer
+                                  ffc039b4         9   func ,g         * 
+FILE=DefaultBuild\timer.obj
+                                  ffc039bd  ffc039f0        34
+  _OpenTimer
+                                  ffc039bd        22   func ,g         * 
+  _CloseTimer
+                                  ffc039df        12   func ,g         * 
+FILE=DefaultBuild\r_cmt_rx.obj
+                                  ffc039f1  ffc03e81       491
+  _R_CMT_CreatePeriodic
+                                  ffc039f1         7   func ,g         * 
+  _R_CMT_CreateOneShot
+                                  ffc039f8        11   func ,g         * 
+  _R_CMT_Stop
+                                  ffc03a09        2e   func ,g         * 
+  _R_CMT_Control
+                                  ffc03a37        e3   func ,g         * 
+  _cmt_create
+                                  ffc03b1a        58   func ,l         * 
+  _cmt_lock_state
+                                  ffc03b72         6   func ,l         * 
+  _cmt_unlock_state
+                                  ffc03b78         6   func ,l         * 
+  _cmt_find_channel
+                                  ffc03b7e        20   func ,l         * 
+  _power_on
+                                  ffc03b9e        70   func ,l         * 
+  _power_off
+                                  ffc03c0e        86   func ,l         * 
+  _cmt_counter_start
+                                  ffc03c94        9e   func ,l         * 
+  _cmt_counter_stop
+                                  ffc03d32        83   func ,l         * 
+  _cmt_setup_channel
+                                  ffc03db5        5c   func ,l         * 
+  _R_CMT_GetVersion
+                                  ffc03e11         6   func ,g         * 
+  _cmt_isr_common
+                                  ffc03e17        2f   func ,l         * 
+  _cmt0_isr
+                                  ffc03e46         f   func ,l         * 
+  _cmt1_isr
+                                  ffc03e55         f   func ,l         * 
+  _cmt2_isr
+                                  ffc03e64         f   func ,l         * 
+  _cmt3_isr
+                                  ffc03e73         f   func ,l         * 
+FILE=DefaultBuild\r_ether_rx.obj
+                                  ffc03e82  ffc049af       b2e
+  _R_ETHER_Initial
+                                  ffc03e82        55   func ,g         * 
+  _R_ETHER_Open_ZC2
+                                  ffc03ed7        f8   func ,g         * 
+  _R_ETHER_Close_ZC2
+                                  ffc03fcf        61   func ,g         * 
+  _R_ETHER_Read_ZC2
+                                  ffc04030        65   func ,g         * 
+  _R_ETHER_Read_ZC2_BufRelease
+                                  ffc04095        69   func ,g         * 
+  _R_ETHER_Write_ZC2_GetBuf
+                                  ffc040fe        62   func ,g         * 
+  _R_ETHER_Write_ZC2_SetBuf
+                                  ffc04160        73   func ,g         * 
+  _R_ETHER_CheckLink_ZC
+                                  ffc041d3        17   func ,g         * 
+  _R_ETHER_LinkProcess
+                                  ffc041ea       174   func ,g         * 
+  _R_ETHER_WakeOnLAN
+                                  ffc0435e        5d   func ,g         * 
+  _R_ETHER_Read
+                                  ffc043bb        41   func ,g         * 
+  _R_ETHER_Write
+                                  ffc043fc        69   func ,g         * 
+  _R_ETHER_CheckWrite
+                                  ffc04465        26   func ,g         * 
+  _R_ETHER_Control
+                                  ffc0448b        3b   func ,g         * 
+  _R_ETHER_GetVersion
+                                  ffc044c6         6   func ,g         * 
+  _ether_reset_mac
+                                  ffc044cc        29   func ,l         * 
+  _ether_init_descriptors
+                                  ffc044f5        5a   func ,l         * 
+  _ether_config_ethernet
+                                  ffc0454f        76   func ,l         * 
+  _ether_pause_resolution
+                                  ffc045c5        32   func ,l         * 
+  _ether_configure_mac
+                                  ffc045f7        57   func ,l         * 
+  _ether_do_link
+                                  ffc0464e       123   func ,l         * 
+  _ether_set_callback
+                                  ffc04771        20   func ,l         * 
+  _ether_set_promiscuous_mode
+                                  ffc04791        18   func ,l         * 
+  _ether_set_int_handler
+                                  ffc047a9        1a   func ,l         * 
+  _ether_power_on
+                                  ffc047c3        2e   func ,l         * 
+  _ether_power_off
+                                  ffc047f1         e   func ,l         * 
+  _power_on
+                                  ffc047ff        52   func ,l         * 
+  _power_off
+                                  ffc04851        3a   func ,l         * 
+  _power_on_control
+                                  ffc0488b        2f   func ,l         * 
+  _power_off_control
+                                  ffc048ba        28   func ,l         * 
+  _check_mpde_bit
+                                  ffc048e2        37   func ,l         * 
+  _ether_eint0
+                                  ffc04919        10   func ,l         * 
+  _ether_eint1
+                                  ffc04929        10   func ,l         * 
+  _ether_int_common
+                                  ffc04939        77   func ,l         * 
+FILE=DefaultBuild\phy.obj
+                                  ffc049b0  ffc04ca1       2f2
+  _phy_init
+                                  ffc049b0        39   func ,g         * 
+  _phy_start_autonegotiate
+                                  ffc049e9        3d   func ,g         * 
+  _phy_set_autonegotiate
+                                  ffc04a26        71   func ,g         * 
+  _phy_get_link_status
+                                  ffc04a97        10   func ,g         * 
+  _phy_read
+                                  ffc04aa7        2b   func ,l         * 
+  _phy_write
+                                  ffc04ad2        27   func ,l         * 
+  _phy_preamble
+                                  ffc04af9        13   func ,l         * 
+  _phy_reg_set
+                                  ffc04b0c        43   func ,l         * 
+  _phy_reg_read
+                                  ffc04b4f        5a   func ,l         * 
+  _phy_reg_write
+                                  ffc04ba9        1e   func ,l         * 
+  _phy_trans_zto0
+                                  ffc04bc7        3a   func ,l         * 
+  _phy_trans_1to0
+                                  ffc04c01         d   func ,l         * 
+  _phy_mii_write1
+                                  ffc04c0e        3a   func ,l         * 
+  _phy_mii_write0
+                                  ffc04c48        3a   func ,l         * 
+  _phy_get_pir_address
+                                  ffc04c82        20   func ,l         * 
+FILE=DefaultBuild\r_ether_setting_rx.obj
+                                  ffc04ca2  ffc04fb7       316
+  _ether_enable_icu
+                                  ffc04ca2        28   func ,g         * 
+  _ether_disable_icu
+                                  ffc04cca        1b   func ,g         * 
+  _ether_clear_icu_source
+                                  ffc04ce5        1b   func ,g         * 
+  _ether_port_enable
+                                  ffc04d00         1   func ,g         * 
+  _ether_port_disable
+                                  ffc04d01         3   func ,g         * 
+  _ether_port_enable_mii
+                                  ffc04d04       18c   func ,l         * 
+  _ether_port_disable_mii
+                                  ffc04e90       128   func ,l         * 
+FILE=DefaultBuild\r_dhcp_client.obj
+                                  ffc04fb8  ffc05578       5c1
+  _r_dhcp_open
+                                  ffc04fb8        7b   func ,g         * 
+  _dhcp_discover
+                                  ffc05033       153   func ,l         * 
+  _dhcp_wait_offer
+                                  ffc05186        ab   func ,l         * 
+  _dhcp_request
+                                  ffc05231       170   func ,l         * 
+  _dhcp_wait_ack
+                                  ffc053a1       12d   func ,l         * 
+  _htons
+                                  ffc054ce         a   func ,l         * 
+  _htonl
+                                  ffc054d8        21   func ,l         * 
+  _checksum
+                                  ffc054f9        31   func ,l         * 
+  _checksum_udp
+                                  ffc0552a        49   func ,l         * 
+  _R_T4_DHCP_CLIENT_GetVersion
+                                  ffc05573         6   func ,g         * 
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc05579  ffc05b97       61f
+  _dns_dummy_proc
+                                  ffc05579         2   func ,l         * 
+  _dns_no_proc
+                                  ffc0557b         3   func ,l         * 
+  _dns_proc_A1
+                                  ffc0557e         c   func ,l         * 
+  _dns_proc_B2
+                                  ffc0558a         c   func ,l         * 
+  _dns_proc_C2
+                                  ffc05596        36   func ,l         * 
+  _dns_proc_D2
+                                  ffc055cc        18   func ,l         * 
+  _dns_proc_D3
+                                  ffc055e4        10   func ,l         * 
+  _dns_proc_D6
+                                  ffc055f4        11   func ,l         * 
+  _dns_proc_E2
+                                  ffc05605        18   func ,l         * 
+  _dns_proc_E4
+                                  ffc0561d        30   func ,l         * 
+  _dns_proc_F2
+                                  ffc0564d        20   func ,l         * 
+  _dns_proc_G2
+                                  ffc0566d        32   func ,l         * 
+  _dns_proc_H2
+                                  ffc0569f        1c   func ,l         * 
+  _dns_proc_H5
+                                  ffc056bb         c   func ,l         * 
+  _dns_proc_I2
+                                  ffc056c7        43   func ,l         * 
+  _R_dns_init
+                                  ffc0570a        1f   func ,g         * 
+  _R_dns_resolve_name
+                                  ffc05729        4e   func ,g         * 
+  _R_dns_process
+                                  ffc05777        1e   func ,g         * 
+  _dns_callback
+                                  ffc05795        69   func ,g         * 
+  _send_dns_request
+                                  ffc057fe        f9   func ,l         * 
+  _receive_dns_response
+                                  ffc058f7        c9   func ,l         * 
+  _convert_array_to_long
+                                  ffc059c0        16   func ,l         * 
+  _convert_name_to_dns_query
+                                  ffc059d6        49   func ,l         * 
+  _check_query
+                                  ffc05a1f        1d   func ,l         * 
+  _check_answer
+                                  ffc05a3c        8c   func ,l         * 
+  _get_name_till_stringend
+                                  ffc05ac8        b7   func ,l         * 
+  _clear_table
+                                  ffc05b7f         9   func ,l         * 
+  _htons
+                                  ffc05b88         a   func ,l         * 
+  _R_T4_DNS_CLIENT_GetVersion
+                                  ffc05b92         6   func ,g         * 
+FILE=DefaultBuild\r_byteq.obj
+                                  ffc05b98  ffc05cc0       129
+  _R_BYTEQ_Open
+                                  ffc05b98        60   func ,g         * 
+  _R_BYTEQ_Put
+                                  ffc05bf8        37   func ,g         * 
+  _R_BYTEQ_Get
+                                  ffc05c2f        3f   func ,g         * 
+  _R_BYTEQ_Flush
+                                  ffc05c6e         f   func ,g         * 
+  _R_BYTEQ_Used
+                                  ffc05c7d        15   func ,g         * 
+  _R_BYTEQ_Unused
+                                  ffc05c92        1d   func ,g         * 
+  _R_BYTEQ_Close
+                                  ffc05caf         c   func ,g         * 
+  _R_BYTEQ_GetVersion
+                                  ffc05cbb         6   func ,g         * 
+FILE=DefaultBuild\r_sci_rx.obj
+                                  ffc05cc1  ffc06225       565
+  _R_SCI_Open
+                                  ffc05cc1        bb   func ,g         * 
+  _power_on
+                                  ffc05d7c        21   func ,l         * 
+  _power_off
+                                  ffc05d9d        1f   func ,l         * 
+  _sci_init_queues
+                                  ffc05dbc        72   func ,l         * 
+  _sci_init_async
+                                  ffc05e2e        b3   func ,l         * 
+  _R_SCI_Send
+                                  ffc05ee1        39   func ,g         * 
+  _sci_send_async_data
+                                  ffc05f1a        57   func ,l         * 
+  _sci_put_byte
+                                  ffc05f71         6   func ,l         * 
+  _sci_transfer
+                                  ffc05f77        39   func ,l         * 
+  _txi_handler
+                                  ffc05fb0         2   func ,g         * 
+  _R_SCI_Receive
+                                  ffc05fb2        39   func ,g         * 
+  _sci_receive_async_data
+                                  ffc05feb        58   func ,l         * 
+  _sci_receive
+                                  ffc06043        3c   func ,l         * 
+  _rxi_handler
+                                  ffc0607f         2   func ,g         * 
+  _sci_error
+                                  ffc06081        69   func ,l         * 
+  _eri_handler
+                                  ffc060ea         2   func ,g         * 
+  _R_SCI_Control
+                                  ffc060ec        fd   func ,g         * 
+  _R_SCI_Close
+                                  ffc061e9        37   func ,g         * 
+  _R_SCI_GetVersion
+                                  ffc06220         6   func ,g         * 
+FILE=DefaultBuild\r_sci_rx64m.obj
+                                  ffc06226  ffc06778       553
+  _sci_mcu_param_check
+                                  ffc06226        12   func ,g         * 
+  _sci_init_register
+                                  ffc06238        bb   func ,g         * 
+  _sci_init_bit_rate
+                                  ffc062f3       15d   func ,g         * 
+  _sci_initialize_ints
+                                  ffc06450        bc   func ,g         * 
+  _sci_disable_ints
+                                  ffc0650c        4e   func ,g         * 
+  _sci1_txi1_isr
+                                  ffc0655a        14   func ,l         * 
+  _sci2_txi2_isr
+                                  ffc0656e        14   func ,l         * 
+  _sci1_rxi1_isr
+                                  ffc06582        14   func ,l         * 
+  _sci2_rxi2_isr
+                                  ffc06596        14   func ,l         * 
+  _sci1_eri1_isr
+                                  ffc065aa         a   func ,g         * 
+  _sci2_eri2_isr
+                                  ffc065b4         a   func ,g         * 
+  _sci_async_cmds
+                                  ffc065be       1bb   func ,g         * 
+FILE=DefaultBuild\Sensor.obj
+                                  ffc06779  ffc06ba2       42a
+  _vibrSensorSend
+                                  ffc06779        3b   func ,g         * 
+  _edsSensorSend
+                                  ffc067b4        3b   func ,g         * 
+  _flushBuffer
+                                  ffc067ef        10   func ,g         * 
+  _vibrSensorProcess
+                                  ffc067ff        be   func ,g         * 
+  _edsSensorProcess
+                                  ffc068bd        c9   func ,g         * 
+  _mergeHLbyte
+                                  ffc06986        40   func ,g         * 
+  _UARTInit
+                                  ffc069c6        7d   func ,g         * 
+  _my_sci_callback_ch1
+                                  ffc06a43        16   func ,g         * 
+  _my_sci_callback_ch2
+                                  ffc06a59        16   func ,g         * 
+  _init_mtu0
+                                  ffc06a6f        58   func ,g         * 
+  _ADCInit
+                                  ffc06ac7        73   func ,g         * 
+  _ADCStart
+                                  ffc06b3a        16   func ,g         * 
+  _ADC_READ
+                                  ffc06b50        53   func ,g         * 
+FILE=DefaultBuild\dsp_avg.obj
+                                  ffc06ba3  ffc06bc0        1e
+  _findavg
+                                  ffc06ba3        1e   func ,g         * 
+FILE=DefaultBuild\dsp_peak.obj
+                                  ffc06bc1  ffc06be6        26
+  _find_maximum
+                                  ffc06bc1        26   func ,g         * 
+FILE=DefaultBuild\dsp_process.obj
+                                  ffc06be7  ffc06c15        2f
+  _DspInit
+                                  ffc06be7        2f   func ,g         * 
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  ffc06c16  ffc06d43       12e
+  _dsp_realFFT
+                                  ffc06c16        b7   func ,g         * 
+  _R_DSP_REAL_FFT_Init
+                                  ffc06ccd        2c   func ,g         * 
+  _R_DSP_REAL_FFT_Operation
+                                  ffc06cf9        4b   func ,g         * 
+FILE=DefaultBuild\EthernetProcess.obj
+                                  ffc06d44  ffc06ff1       2ae
+  _encodeIPv4
+                                  ffc06d44         f   func ,g         * 
+  _decodeIPv4
+                                  ffc06d53        12   func ,g         * 
+  _TCP_Connect
+                                  ffc06d65        69   func ,g         * 
+  _TCP_SendingData
+                                  ffc06dce        49   func ,g         * 
+  _TCP_Terminate
+                                  ffc06e17        2a   func ,g         * 
+  _EthernetDHCP
+                                  ffc06e41        93   func ,g         * 
+  _EthernetInit
+                                  ffc06ed4        57   func ,g         * 
+  _set_tcpudp_env
+                                  ffc06f2b        c4   func ,g         * 
+  _tcp_callback
+                                  ffc06fef         3   func ,g         * 
+FILE=DefaultBuild\LeadWell_Vibr.obj
+                                  ffc06ff2  ffc07415       424
+  _main
+                                  ffc06ff2       3a2   func ,g         * 
+  _Rx64MInitPorts
+                                  ffc07394        46   func ,g         * 
+  _conv_int16_int8
+                                  ffc073da        18   func ,g         * 
+  _conv_int32_int8
+                                  ffc073f2        24   func ,g         * 
+FILE=DefaultBuild\r_s12ad_rx.obj
+                                  ffc07416  ffc0746d        58
+  _R_ADC_Open
+                                  ffc07416         4   func ,g         * 
+  _R_ADC_Control
+                                  ffc0741a         4   func ,g         * 
+  _R_ADC_Read
+                                  ffc0741e        34   func ,g         * 
+  _R_ADC_ReadAll
+                                  ffc07452        12   func ,g         * 
+  _R_ADC_Close
+                                  ffc07464         4   func ,g         * 
+  _R_ADC_GetVersion
+                                  ffc07468         6   func ,g         * 
+FILE=DefaultBuild\r_s12ad_rx64m.obj
+                                  ffc0746e  ffc080fa       c8d
+  _adc_open
+                                  ffc0746e       216   func ,g         * 
+  _adc_check_open_cfg
+                                  ffc07684        71   func ,l         * 
+  _adc_control
+                                  ffc076f5       192   func ,g         * 
+  _adc_en_comparator_level0
+                                  ffc07887       132   func ,l         * 
+  _adc_s12cmpi0_isr
+                                  ffc079b9        2e   func ,g         * 
+  _adc_s12cmpi1_isr
+                                  ffc079e7        2e   func ,g         * 
+  _adc_get_and_clr_cmpi_flags
+                                  ffc07a15        40   func ,l         * 
+  _adc_configure_scan
+                                  ffc07a55       181   func ,l         * 
+  _adc_check_scan_config
+                                  ffc07bd6       158   func ,l         * 
+  _adc_configure_sensors
+                                  ffc07d2e        c1   func ,l         * 
+  _adc_enable_s12adi
+                                  ffc07def        3f   func ,l         * 
+  _adc_enable_s12gbadi
+                                  ffc07e2e        3f   func ,l         * 
+  _adc_s12adi0_isr
+                                  ffc07e6d        2c   func ,l         * 
+  _adc_s12adi1_isr
+                                  ffc07e99        2c   func ,l         * 
+  _adc_s12gbadi0_isr
+                                  ffc07ec5        2c   func ,l         * 
+  _adc_s12gbadi1_isr
+                                  ffc07ef1        2c   func ,l         * 
+  _adc_close
+                                  ffc07f1d       138   func ,g         * 
+  _adc_read_all
+                                  ffc08055        a6   func ,g         * 
+FILE=DefaultBuild\LEDprocess.obj
+                                  ffc080fb  ffc08382       288
+  _LEDinit
+                                  ffc080fb        56   func ,g         * 
+  _LED_AllON
+                                  ffc08151        20   func ,g         * 
+  _LED_AllOFF
+                                  ffc08171        20   func ,g         * 
+  _LED_StepUP
+                                  ffc08191        d9   func ,g         * 
+  _LED_StepDN
+                                  ffc0826a        d9   func ,g         * 
+  _LED_LidODD
+                                  ffc08343        20   func ,g         * 
+  _LED_LidEVN
+                                  ffc08363        20   func ,g         * 
+FILE=freopen
+                                  ffc08383  ffc083b1        2f
+  _freopen
+                                  ffc08383        2f   func ,g         * 
+FILE=fclose
+                                  ffc083b2  ffc08405        54
+  _fclose
+                                  ffc083b2        54   func ,g         * 
+FILE=printf
+                                  ffc08406  ffc08444        3f
+  _prout
+                                  ffc08406        1d   func ,l         * 
+  _printf
+                                  ffc08423        22   func ,g         * 
+FILE=abs
+                                  ffc08445  ffc08447         3
+  _abs
+                                  ffc08445         3   func ,g         * 
+FILE=__COM_DIV64u
+                                  ffc08448  ffc084e0        99
+  __COM_DIV64u
+                                  ffc08448         0   none ,g         * 
+  _Loop_Init
+                                  ffc08452         0   none ,l         * 
+  _Loop
+                                  ffc0845a         0   none ,l         * 
+  _DivStart
+                                  ffc08466         0   none ,l         * 
+  _Success
+                                  ffc08474         0   none ,l         * 
+  _DivEnd
+                                  ffc08480         0   none ,l         * 
+  IXI6DIV
+                                  ffc08485         0   none ,l         * 
+  IXI4DIV
+                                  ffc08497         0   none ,l         * 
+  IXI2DIV
+                                  ffc084a7         0   none ,l         * 
+  I8I2DIV
+                                  ffc084af         0   none ,l         * 
+  I4I2DIV
+                                  ffc084dd         0   none ,l         * 
+  _i8divU_End
+                                  ffc084e0         0   none ,l         * 
+FILE=__initsct
+                                  ffc084e1  ffc0852a        4a
+  __INITSCT
+                                  ffc084e1         0   none ,g         * 
+  loop1
+                                  ffc084f3         0   none ,l         * 
+  next_loop1
+                                  ffc08501         0   none ,l         * 
+  loop3
+                                  ffc08513         0   none ,l         * 
+  next_loop3
+                                  ffc08524         0   none ,l         * 
+FILE=tcp
+                                  ffc0852b  ffc0a38f      1e65
+  _net2hl_yn_xn
+                                  ffc0852b         f   func ,g         * 
+  __tcp_init_tcb
+                                  ffc0853a        7b   func ,g         * 
+  __process_tcpip
+                                  ffc085b5        87   func ,g         * 
+  __proc_api
+                                  ffc0863c        9a   func ,g         * 
+  __tcp_api_acpt
+                                  ffc086d6        89   func ,g         * 
+  __tcp_api_con
+                                  ffc0875f        ba   func ,g         * 
+  __tcp_api_sht_cls
+                                  ffc08819        eb   func ,g         * 
+  __tcp_api_snddt
+                                  ffc08904        9f   func ,g         * 
+  __tcp_api_rcvdt
+                                  ffc089a3        ad   func ,g         * 
+  __tcp_cpy_rwdat
+                                  ffc08a50        bc   func ,g         * 
+  __proc_rcv
+                                  ffc08b0c       2bc   func ,g         * 
+  __tcp_stat
+                                  ffc08dc8        72   func ,g         * 
+  __tcp_rcv_rst
+                                  ffc08e3a       178   func ,g         * 
+  __tcp_rcv_syn
+                                  ffc08fb2       174   func ,g         * 
+  __tcp_rcv_ack
+                                  ffc09126       22b   func ,g         * 
+  __tcp_rcv_opt
+                                  ffc09351        a7   func ,g         * 
+  __tcp_proc_data
+                                  ffc093f8        d0   func ,g         * 
+  __tcp_rcv_fin
+                                  ffc094c8        fb   func ,g         * 
+  __tcp_swin_updt
+                                  ffc095c3       11a   func ,g         * 
+  __proc_snd
+                                  ffc096dd       467   func ,g         * 
+  __tcp_snd
+                                  ffc09b44       5be   func ,g         * 
+  __tcp_cancel_api
+                                  ffc0a102        93   func ,g         * 
+  __tcp_clr_rtq
+                                  ffc0a195        36   func ,g         * 
+  __tcp_return_listen
+                                  ffc0a1cb        1d   func ,g         * 
+  __tcp_api_wup
+                                  ffc0a1e8        18   func ,g         * 
+  __tcp_check_cepid_arg
+                                  ffc0a200        1b   func ,g         * 
+  __tcp_check_len_arg
+                                  ffc0a21b         5   func ,g         * 
+  __tcp_check_tmout_arg
+                                  ffc0a220        3b   func ,g         * 
+  __tcp_is_tcb_queue_over
+                                  ffc0a25b        1e   func ,g         * 
+  __tcp_call_callback
+                                  ffc0a279        60   func ,g         * 
+  __tcp_api_type_to_fn
+                                  ffc0a2d9        42   func ,g         * 
+  __tcp_recv_polling
+                                  ffc0a31b        6e   func ,g         * 
+  __tcp_init_callback_info
+                                  ffc0a389         7   func ,g         * 
+FILE=tcp_api
+                                  ffc0a390  ffc0ad27       998
+  _tcpudp_open
+                                  ffc0a390       162   func ,g         * 
+  _tcpudp_close
+                                  ffc0a4f2         f   func ,g         * 
+  __getRAMsize_sub
+                                  ffc0a501        10   func ,g         * 
+  __getTcpRAMsize
+                                  ffc0a511        5a   func ,g         * 
+  __getUdpRAMsize
+                                  ffc0a56b         c   func ,g         * 
+  __getIpRAMsize
+                                  ffc0a577         b   func ,g         * 
+  __getTblRAMsize
+                                  ffc0a582        33   func ,g         * 
+  _tcpudp_get_ramsize
+                                  ffc0a5b5        1d   func ,g         * 
+  _tcp_acp_cep
+                                  ffc0a5d2        cd   func ,g         * 
+  _tcp_con_cep
+                                  ffc0a69f        e0   func ,g         * 
+  _tcp_sht_cep
+                                  ffc0a77f        82   func ,g         * 
+  _tcp_cls_cep
+                                  ffc0a801        9c   func ,g         * 
+  _tcp_snd_dat
+                                  ffc0a89d        cf   func ,g         * 
+  _tcp_rcv_dat
+                                  ffc0a96c       138   func ,g         * 
+  _tcp_can_cep
+                                  ffc0aaa4        90   func ,g         * 
+  __tcp_api_req
+                                  ffc0ab34        65   func ,g         * 
+  __tcp_api_slp
+                                  ffc0ab99        25   func ,g         * 
+  __tcp_clr_req
+                                  ffc0abbe        40   func ,g         * 
+  _tcp_read_stat
+                                  ffc0abfe        7f   func ,g         * 
+  _tcp_force_clr
+                                  ffc0ac7d        3f   func ,g         * 
+  _udp_force_clr
+                                  ffc0acbc        42   func ,g         * 
+  _tcp_set_mss
+                                  ffc0acfe        2a   func ,g         * 
+FILE=udp
+                                  ffc0ad28  ffc0b52f       808
+  _udp_rcv_dat
+                                  ffc0ad28       105   func ,g         * 
+  _udp_snd_dat
+                                  ffc0ae2d        bb   func ,g         * 
+  _udp_can_cep
+                                  ffc0aee8        97   func ,g         * 
+  __udp_rcv
+                                  ffc0af7f        d4   func ,g         * 
+  __udp_rcv_sub
+                                  ffc0b053       135   func ,g         * 
+  __udp_snd
+                                  ffc0b188       1cf   func ,g         * 
+  __udp_api_slp
+                                  ffc0b357        18   func ,g         * 
+  __udp_api_wup
+                                  ffc0b36f        10   func ,g         * 
+  __proc_udp_api
+                                  ffc0b37f        ae   func ,g         * 
+  __udp_init
+                                  ffc0b42d        23   func ,g         * 
+  __udp_api_tmout
+                                  ffc0b450        5c   func ,g         * 
+  __tcpudp_cksum
+                                  ffc0b4ac        50   func ,g         * 
+  __udp_api_type_to_fn
+                                  ffc0b4fc        14   func ,g         * 
+  __udp_check_cepid_arg
+                                  ffc0b510        1b   func ,g         * 
+  __udp_check_len_arg
+                                  ffc0b52b         5   func ,g         * 
+FILE=r_dsp_complex_vecCplxMag_ci32i32
+                                  ffc0b530  ffc0b7cc       29d
+  _R_DSP_VecCplxMag_ci32i32
+                                  ffc0b530       29d   func ,g         * 
+FILE=r_dsp_FFTBufSize_f32cf32
+                                  ffc0b7cd  ffc0b892        c6
+  _R_DSP_FFT_BufSize_f32cf32
+                                  ffc0b7cd        c6   func ,g         * 
+FILE=r_dsp_FFTInit_cf32f32
+                                  ffc0b893  ffc0bb5e       2cc
+  _R_DSP_FFT_Init_cf32f32
+                                  ffc0b893       2cc   func ,g         * 
+FILE=r_dsp_FFTInit_f32cf32
+                                  ffc0bb5f  ffc0bed4       376
+  _R_DSP_FFT_Init_f32cf32
+                                  ffc0bb5f       376   func ,g         * 
+FILE=r_dsp_FFTInit_i16ci32
+                                  ffc0bed5  ffc0c47c       5a8
+  _R_DSP_FFT_Init_i16ci32
+                                  ffc0bed5       5a8   func ,g         * 
+FILE=r_dsp_FFT_cf32f32
+                                  ffc0c47d  ffc0c4d7        5b
+  _R_DSP_IFFT_CCS_cf32f32
+                                  ffc0c47d        5b   func ,g         * 
+FILE=r_dsp_FFT_f32cf32
+                                  ffc0c4d8  ffc0c531        5a
+  _R_DSP_FFT_f32cf32
+                                  ffc0c4d8        5a   func ,g         * 
+FILE=r_dsp_FFT_i16ci32
+                                  ffc0c532  ffc0c5ba        89
+  _R_DSP_FFT_i16ci32
+                                  ffc0c532        89   func ,g         * 
+FILE=cosf
+                                  ffc0c5bb  ffc0c5ee        34
+  _cosl
+                                  ffc0c5bb         2   func ,g         * 
+  _cos
+                                  ffc0c5bd         2   func ,g         * 
+  _cosf
+                                  ffc0c5bf        30   func ,g         * 
+FILE=sinf
+                                  ffc0c5ef  ffc0c62d        3f
+  _sinl
+                                  ffc0c5ef         2   func ,g         * 
+  _sin
+                                  ffc0c5f1         2   func ,g         * 
+  _sinf
+                                  ffc0c5f3        3b   func ,g         * 
+FILE=fwrite
+                                  ffc0c62e  ffc0c700        d3
+  _fwrite
+                                  ffc0c62e        d3   func ,g         * 
+FILE=fflush
+                                  ffc0c701  ffc0c782        82
+  _fflush
+                                  ffc0c701        82   func ,g         * 
+FILE=xfoprep
+                                  ffc0c783  ffc0c858        d6
+  __Foprep
+                                  ffc0c783        d6   func ,g         * 
+FILE=xfofind
+                                  ffc0c859  ffc0c8e6        8e
+  __Fofind
+                                  ffc0c859        45   func ,g         * 
+  __Fofree
+                                  ffc0c89e        49   func ,g         * 
+FILE=xprintf
+                                  ffc0c8e7  ffc0cb55       26f
+  __Printf
+                                  ffc0c8e7       26f   func ,g         * 
+FILE=memcmp
+                                  ffc0cb56  ffc0cb79        24
+  _memcmp
+                                  ffc0cb56        24   func ,g         * 
+FILE=free
+                                  ffc0cb7a  ffc0cbfc        83
+  _free
+                                  ffc0cb7a        83   func ,g         * 
+FILE=ether
+                                  ffc0cbfd  ffc0d282       686
+  __ether_proc_rcv
+                                  ffc0cbfd        c0   func ,g         * 
+  __ether_rcv_arp
+                                  ffc0ccbd       101   func ,g         * 
+  __ether_arp_resolve
+                                  ffc0cdbe        19   func ,g         * 
+  __ether_snd_arp
+                                  ffc0cdd7        b5   func ,g         * 
+  __ether_snd_ip
+                                  ffc0ce8c       194   func ,g         * 
+  __ether_snd
+                                  ffc0d020       11d   func ,g         * 
+  __ether_arp_add
+                                  ffc0d13d       10a   func ,g         * 
+  __ether_arp_del
+                                  ffc0d247         b   func ,g         * 
+  __ether_arp_init
+                                  ffc0d252        31   func ,g         * 
+FILE=ip
+                                  ffc0d283  ffc0d57c       2fa
+  __ip_rcv_hdr
+                                  ffc0d283        ff   func ,g         * 
+  __ip_snd
+                                  ffc0d382        a3   func ,g         * 
+  __ip_snd_icmp
+                                  ffc0d425         c   func ,g         * 
+  __ip_chk_srcip
+                                  ffc0d431        3c   func ,l         * 
+  __ip_check_ipadd_proto
+                                  ffc0d46d        71   func ,g         * 
+  __ip_check_multicast
+                                  ffc0d4de        39   func ,g         * 
+  __ip_check_broadcast
+                                  ffc0d517        66   func ,g         * 
+FILE=cksum_rx_little
+                                  ffc0d57d  ffc0d66b        ef
+  __cksum
+                                  ffc0d57d         0   none ,g         * 
+  ..tl0001
+                                  ffc0d5a3         0   none ,l         * 
+  CKSUM_ODD_NEXT4
+                                  ffc0d5bb         0   none ,l         * 
+  CKSUM_ODD_NEXT2
+                                  ffc0d5c9         0   none ,l         * 
+  CKSUM_ODD_NEXT1
+                                  ffc0d5d1         0   none ,l         * 
+  CKSUM_ODD_NBYTES_NOT_ODD
+                                  ffc0d5e4         0   none ,l         * 
+  CKSUM_EVEN
+                                  ffc0d602         0   none ,l         * 
+  ..tl0002
+                                  ffc0d607         0   none ,l         * 
+  CKSUM_EVEN_NEXT4
+                                  ffc0d61f         0   none ,l         * 
+  CKSUM_EVEN_NEXT2
+                                  ffc0d62d         0   none ,l         * 
+  CKSUM_EVEN_NEXT1
+                                  ffc0d635         0   none ,l         * 
+  CKSUM_EVEN_NBYTES_NOT_ODD
+                                  ffc0d648         0   none ,l         * 
+  CKSUM_EXIT
+                                  ffc0d65b         0   none ,l         * 
+  CKSUM_ZERO_EXIT
+                                  ffc0d663         0   none ,l         * 
+FILE=r_dsp_complexMagnitude_ci32i32
+                                  ffc0d66c  ffc0d67f        14
+  _R_DSP_CplxMag_ci32i32
+                                  ffc0d66c         0   none ,g         * 
+FILE=r_fix29cos_asm
+                                  ffc0d680  ffc0d740        c1
+  _FIX29_cos
+                                  ffc0d680         0   none ,g         * 
+  L13
+                                  ffc0d68c         0   none ,l         * 
+  L15
+                                  ffc0d6a5         0   none ,l         * 
+  L20
+                                  ffc0d6f1         0   none ,l         * 
+  L18
+                                  ffc0d73d         0   none ,l         * 
+FILE=r_fix29sin_asm
+                                  ffc0d741  ffc0d7d0        90
+  _FIX29_sin
+                                  ffc0d741         0   none ,g         * 
+  L14
+                                  ffc0d753         0   none ,l         * 
+  L16
+                                  ffc0d76e         0   none ,l         * 
+  L21
+                                  ffc0d785         0   none ,l         * 
+  L23
+                                  ffc0d7c9         0   none ,l         * 
+  LPI
+                                  ffc0d7cc         0   none ,l         * 
+FILE=r_rfft_f32cf32_rxv2
+                                  ffc0d7d1  ffc0de32       662
+  _R_rfft_f32cf32
+                                  ffc0d7d1         0   none ,g         * 
+  ..tl0001
+                                  ffc0d7e4         0   none ,l         * 
+  NoWindow
+                                  ffc0d81a         0   none ,l         * 
+  ..tl0002
+                                  ffc0d81c         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0d838         0   none ,l         * 
+  CALC_FFT
+                                  ffc0d892         0   none ,l         * 
+  ..tl0003
+                                  ffc0d8bd         0   none ,l         * 
+  ..tl0004
+                                  ffc0d8ca         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0d8d9         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0d8f2         0   none ,l         * 
+  ..tl0005
+                                  ffc0d8ff         0   none ,l         * 
+  _fftN_N1
+                                  ffc0d9d2         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0d9e4         0   none ,l         * 
+  ..tl0006
+                                  ffc0d9f2         0   none ,l         * 
+  _fftNth
+                                  ffc0daec         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0daf2         0   none ,l         * 
+  ..tl0007
+                                  ffc0dafa         0   none ,l         * 
+  _fftLast2
+                                  ffc0db3a         0   none ,l         * 
+  ..tl0008
+                                  ffc0db4a         0   none ,l         * 
+  _wasaNew
+                                  ffc0dbaa         0   none ,l         * 
+  ..tl0009
+                                  ffc0dbd1         0   none ,l         * 
+  _brev4
+                                  ffc0dc29         0   none ,l         * 
+  ..tl000A
+                                  ffc0dc36         0   none ,l         * 
+  _R_irfft_cf32f32
+                                  ffc0dc5a         0   none ,g         * 
+  ..tl000B
+                                  ffc0dc66         0   none ,l         * 
+  CALC_IFFT
+                                  ffc0dce7         0   none ,l         * 
+  ..tl000C
+                                  ffc0dd12         0   none ,l         * 
+  ..tl000D
+                                  ffc0dd1f         0   none ,l         * 
+  CHECK_IFFT_LOOP
+                                  ffc0dd2e         0   none ,l         * 
+  ..tl000E
+                                  ffc0dd6e         0   none ,l         * 
+  _iwasaNew
+                                  ffc0ddaf         0   none ,l         * 
+  ..tl000F
+                                  ffc0dddc         0   none ,l         * 
+FILE=r_dsp_rfft_i16ci32_rxv2
+                                  ffc0de33  ffc0e337       505
+  _R_rfft_i16ci32
+                                  ffc0de33         0   none ,g         * 
+  ..tl0001
+                                  ffc0de46         0   none ,l         * 
+  NoWindow
+                                  ffc0de7c         0   none ,l         * 
+  ..tl0002
+                                  ffc0de7e         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0dea2         0   none ,l         * 
+  CALC_FFT
+                                  ffc0defc         0   none ,l         * 
+  ..tl0003
+                                  ffc0df27         0   none ,l         * 
+  ..tl0004
+                                  ffc0df34         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0df43         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0df5c         0   none ,l         * 
+  ..tl0005
+                                  ffc0df67         0   none ,l         * 
+  _fftN_N1
+                                  ffc0e069         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0e07b         0   none ,l         * 
+  ..tl0006
+                                  ffc0e085         0   none ,l         * 
+  _fftNth
+                                  ffc0e196         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0e19c         0   none ,l         * 
+  ..tl0007
+                                  ffc0e1a4         0   none ,l         * 
+  _fftLast2
+                                  ffc0e1e8         0   none ,l         * 
+  ..tl0008
+                                  ffc0e1f8         0   none ,l         * 
+  _wasaNew
+                                  ffc0e250         0   none ,l         * 
+  ..tl0009
+                                  ffc0e27b         0   none ,l         * 
+  _brev4
+                                  ffc0e307         0   none ,l         * 
+  ..tl000A
+                                  ffc0e314         0   none ,l         * 
+FILE=r_dsp_rfft_sc_i16ci32_rxv2
+                                  ffc0e338  ffc0e84c       515
+  _R_rfft_sc_i16ci32
+                                  ffc0e338         0   none ,g         * 
+  ..tl0001
+                                  ffc0e34b         0   none ,l         * 
+  NoWindow
+                                  ffc0e381         0   none ,l         * 
+  ..tl0002
+                                  ffc0e383         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0e3a7         0   none ,l         * 
+  CALC_FFT
+                                  ffc0e401         0   none ,l         * 
+  ..tl0003
+                                  ffc0e42c         0   none ,l         * 
+  ..tl0004
+                                  ffc0e439         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0e448         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0e461         0   none ,l         * 
+  ..tl0005
+                                  ffc0e46c         0   none ,l         * 
+  _fftN_N1
+                                  ffc0e56a         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0e57c         0   none ,l         * 
+  ..tl0006
+                                  ffc0e586         0   none ,l         * 
+  _fftNth
+                                  ffc0e693         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0e699         0   none ,l         * 
+  ..tl0007
+                                  ffc0e6a1         0   none ,l         * 
+  _fftLast2
+                                  ffc0e6ed         0   none ,l         * 
+  ..tl0008
+                                  ffc0e6fd         0   none ,l         * 
+  _wasaNew
+                                  ffc0e765         0   none ,l         * 
+  ..tl0009
+                                  ffc0e790         0   none ,l         * 
+  _brev4
+                                  ffc0e81c         0   none ,l         * 
+  ..tl000A
+                                  ffc0e829         0   none ,l         * 
+FILE=r_dsp_rfft_sc_tw32_i16ci32_rxv2
+                                  ffc0e84d  ffc0ed50       504
+  _R_rfft_sc_tw32_i16ci32
+                                  ffc0e84d         0   none ,g         * 
+  ..tl0001
+                                  ffc0e860         0   none ,l         * 
+  NoWindow
+                                  ffc0e896         0   none ,l         * 
+  ..tl0002
+                                  ffc0e898         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0e8bc         0   none ,l         * 
+  CALC_FFT
+                                  ffc0e916         0   none ,l         * 
+  ..tl0003
+                                  ffc0e941         0   none ,l         * 
+  ..tl0004
+                                  ffc0e94e         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0e95d         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0e976         0   none ,l         * 
+  ..tl0005
+                                  ffc0e981         0   none ,l         * 
+  _fftN_N1
+                                  ffc0ea7b         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0ea8d         0   none ,l         * 
+  ..tl0006
+                                  ffc0ea97         0   none ,l         * 
+  _fftNth
+                                  ffc0eba1         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0eba7         0   none ,l         * 
+  ..tl0007
+                                  ffc0ebaf         0   none ,l         * 
+  _fftLast2
+                                  ffc0ebfb         0   none ,l         * 
+  ..tl0008
+                                  ffc0ec0b         0   none ,l         * 
+  _wasaNew
+                                  ffc0ec73         0   none ,l         * 
+  ..tl0009
+                                  ffc0ec99         0   none ,l         * 
+  _brev4
+                                  ffc0ed20         0   none ,l         * 
+  ..tl000A
+                                  ffc0ed2d         0   none ,l         * 
+FILE=r_dsp_rfft_tw32_i16ci32_rxv2
+                                  ffc0ed51  ffc0f244       4f4
+  _R_rfft_tw32_i16ci32
+                                  ffc0ed51         0   none ,g         * 
+  ..tl0001
+                                  ffc0ed64         0   none ,l         * 
+  NoWindow
+                                  ffc0ed9a         0   none ,l         * 
+  ..tl0002
+                                  ffc0ed9c         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0edc0         0   none ,l         * 
+  CALC_FFT
+                                  ffc0ee1a         0   none ,l         * 
+  ..tl0003
+                                  ffc0ee45         0   none ,l         * 
+  ..tl0004
+                                  ffc0ee52         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0ee61         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0ee7a         0   none ,l         * 
+  ..tl0005
+                                  ffc0ee85         0   none ,l         * 
+  _fftN_N1
+                                  ffc0ef83         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0ef95         0   none ,l         * 
+  ..tl0006
+                                  ffc0ef9f         0   none ,l         * 
+  _fftNth
+                                  ffc0f0ad         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0f0b3         0   none ,l         * 
+  ..tl0007
+                                  ffc0f0bb         0   none ,l         * 
+  _fftLast2
+                                  ffc0f0ff         0   none ,l         * 
+  ..tl0008
+                                  ffc0f10f         0   none ,l         * 
+  _wasaNew
+                                  ffc0f167         0   none ,l         * 
+  ..tl0009
+                                  ffc0f18d         0   none ,l         * 
+  _brev4
+                                  ffc0f214         0   none ,l         * 
+  ..tl000A
+                                  ffc0f221         0   none ,l         * 
+FILE=r_dsp_rfft_x2_i16ci32_rxv2
+                                  ffc0f245  ffc0f731       4ed
+  _R_rfft_x2_i16ci32
+                                  ffc0f245         0   none ,g         * 
+  ..tl0001
+                                  ffc0f258         0   none ,l         * 
+  NoWindow
+                                  ffc0f28e         0   none ,l         * 
+  ..tl0002
+                                  ffc0f290         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0f2b4         0   none ,l         * 
+  CALC_FFT
+                                  ffc0f30e         0   none ,l         * 
+  ..tl0003
+                                  ffc0f339         0   none ,l         * 
+  ..tl0004
+                                  ffc0f346         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0f355         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0f36e         0   none ,l         * 
+  ..tl0005
+                                  ffc0f379         0   none ,l         * 
+  _fftN_N1
+                                  ffc0f467         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0f479         0   none ,l         * 
+  ..tl0006
+                                  ffc0f483         0   none ,l         * 
+  _fftNth
+                                  ffc0f580         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0f586         0   none ,l         * 
+  ..tl0007
+                                  ffc0f58e         0   none ,l         * 
+  _fftLast2
+                                  ffc0f5d2         0   none ,l         * 
+  ..tl0008
+                                  ffc0f5e2         0   none ,l         * 
+  _wasaNew
+                                  ffc0f64a         0   none ,l         * 
+  ..tl0009
+                                  ffc0f675         0   none ,l         * 
+  _brev4
+                                  ffc0f701         0   none ,l         * 
+  ..tl000A
+                                  ffc0f70e         0   none ,l         * 
+FILE=r_dsp_rfft_x2_tw32_i16ci32_rxv2
+                                  ffc0f732  ffc0fc0d       4dc
+  _R_rfft_x2_tw32_i16ci32
+                                  ffc0f732         0   none ,g         * 
+  ..tl0001
+                                  ffc0f745         0   none ,l         * 
+  NoWindow
+                                  ffc0f77b         0   none ,l         * 
+  ..tl0002
+                                  ffc0f77d         0   none ,l         * 
+  CALC_LOGN
+                                  ffc0f7a1         0   none ,l         * 
+  CALC_FFT
+                                  ffc0f7fb         0   none ,l         * 
+  ..tl0003
+                                  ffc0f826         0   none ,l         * 
+  ..tl0004
+                                  ffc0f833         0   none ,l         * 
+  CHECK_FFT_LOOP
+                                  ffc0f842         0   none ,l         * 
+  _fft1st2nd
+                                  ffc0f85b         0   none ,l         * 
+  ..tl0005
+                                  ffc0f866         0   none ,l         * 
+  _fftN_N1
+                                  ffc0f950         0   none ,l         * 
+  fftN_N1_LOOP
+                                  ffc0f962         0   none ,l         * 
+  ..tl0006
+                                  ffc0f96c         0   none ,l         * 
+  _fftNth
+                                  ffc0fa66         0   none ,l         * 
+  fftNth_LOOP
+                                  ffc0fa6c         0   none ,l         * 
+  ..tl0007
+                                  ffc0fa74         0   none ,l         * 
+  _fftLast2
+                                  ffc0fab8         0   none ,l         * 
+  ..tl0008
+                                  ffc0fac8         0   none ,l         * 
+  _wasaNew
+                                  ffc0fb30         0   none ,l         * 
+  ..tl0009
+                                  ffc0fb56         0   none ,l         * 
+  _brev4
+                                  ffc0fbdd         0   none ,l         * 
+  ..tl000A
+                                  ffc0fbea         0   none ,l         * 
+FILE=sincosfsub
+                                  ffc0fc0e  ffc0fcf5        e8
+  ___poly_sinf
+                                  ffc0fc0e        31   func ,g         * 
+  ___poly_cosf
+                                  ffc0fc3f        28   func ,g         * 
+  _poly_cosfn
+                                  ffc0fc67         7   func ,l         * 
+  _poly_sinfn
+                                  ffc0fc6e         5   func ,l         * 
+  _sincosf_special
+                                  ffc0fc73        33   func ,l         * 
+  ___internal_sincosf
+                                  ffc0fca6        50   func ,g         * 
+FILE=xfwprep
+                                  ffc0fcf6  ffc0fd8e        99
+  __Fwprep
+                                  ffc0fcf6        99   func ,g         * 
+FILE=xputfld
+                                  ffc0fd8f  ffc10221       493
+  __Putfld
+                                  ffc0fd8f       493   func ,g         * 
+FILE=xfopen
+                                  ffc10222  ffc10251        30
+  __Fopen
+                                  ffc10222        30   func ,g         * 
+FILE=xvacopy
+                                  ffc10252  ffc10259         8
+  __Vacopy
+                                  ffc10252         8   func ,g         * 
+FILE=xputtxt
+                                  ffc1025a  ffc1053e       2e5
+  __Puttxt
+                                  ffc1025a       2e5   func ,g         * 
+FILE=strchr
+                                  ffc1053f  ffc10551        13
+  _strchr
+                                  ffc1053f        13   func ,g         * 
+FILE=xctype
+                                  ffc10552  ffc10567        16
+  __Getpctype
+                                  ffc10552        16   func ,g         * 
+FILE=malloc
+                                  ffc10568  ffc10645        de
+  _findmem
+                                  ffc10568        7b   func ,l         * 
+  _malloc
+                                  ffc105e3        63   func ,g         * 
+FILE=r_dsp_sqrt_int_rx
+                                  ffc10646  ffc107c2       17d
+  _R_sqrt_int32
+                                  ffc10646         0   none ,g         * 
+  _R_sqrtBody
+                                  ffc1064a         0   none ,l         * 
+  ..tl0001
+                                  ffc1065b         0   none ,l         * 
+  SQRT32LOOP
+                                  ffc10663         0   none ,l         * 
+  SQRT32EXIT
+                                  ffc10678         0   none ,l         * 
+  ..tl0002
+                                  ffc1067d         0   none ,l         * 
+  _R_sqrt_rem_int32
+                                  ffc1067e         0   none ,l         * 
+  SQRTREM32EXIT
+                                  ffc106cb         0   none ,l         * 
+  ..tl0003
+                                  ffc106d0         0   none ,l         * 
+  SQRTREM32NONOR
+                                  ffc106d5         0   none ,l         * 
+  _R_sqrtBody64
+                                  ffc106dd         0   none ,l         * 
+  ..tl0004
+                                  ffc106ff         0   none ,l         * 
+  SQRT64QPRE
+                                  ffc10707         0   none ,l         * 
+  SQRT64QLOOP
+                                  ffc10708         0   none ,l         * 
+  ..tl0005
+                                  ffc10710         0   none ,l         * 
+  SQRTCMP1_NEXT
+                                  ffc10715         0   none ,l         * 
+  SQRT64LOOP
+                                  ffc10717         0   none ,l         * 
+  SQRTCMP2_NEXT
+                                  ffc1071e         0   none ,l         * 
+  SQRTCMP3_NEXT
+                                  ffc10737         0   none ,l         * 
+  SQRT64EXIT
+                                  ffc10745         0   none ,l         * 
+  ..tl0006
+                                  ffc1074a         0   none ,l         * 
+  _R_sqrt_int64
+                                  ffc1074f         0   none ,g         * 
+  ..tl0007
+                                  ffc107ae         0   none ,l         * 
+  SQRT64SQRT32
+                                  ffc107b3         0   none ,l         * 
+  SQRT64BODY64
+                                  ffc107bb         0   none ,l         * 
+FILE=fmodf
+                                  ffc107c3  ffc107f4        32
+  _fmodl
+                                  ffc107c3         2   func ,g         * 
+  _fmod
+                                  ffc107c5         2   func ,g         * 
+  _fmodf
+                                  ffc107c7        2e   func ,g         * 
+FILE=nanfval
+                                  ffc107f5  ffc107fb         7
+  ___nanf_value
+                                  ffc107f5         7   func ,g         * 
+FILE=xldtob
+                                  ffc107fc  ffc10beb       3f0
+  __Ldtob
+                                  ffc107fc       3f0   func ,g         * 
+FILE=xputstr
+                                  ffc10bec  ffc10ccb        e0
+  __Putstr
+                                  ffc10bec        e0   func ,g         * 
+FILE=xlitob
+                                  ffc10ccc  ffc10dd9       10e
+  __Litob
+                                  ffc10ccc       10e   func ,g         * 
+FILE=xgetmem
+                                  ffc10dda  ffc10df4        1b
+  __Getmem
+                                  ffc10dda        1b   func ,g         * 
+FILE=_i_fmds
+                                  ffc10df5  ffc10ecc        d8
+  __in_fmods
+                                  ffc10df5        d8   func ,g         * 
+FILE=xgenld
+                                  ffc10ecd  ffc1118c       2c0
+  __Genld
+                                  ffc10ecd       2c0   func ,g         * 
+FILE=xwctomb
+                                  ffc1118d  ffc112e2       156
+  __Wctombx
+                                  ffc1118d       110   func ,g         * 
+  __Wctomb
+                                  ffc1129d        46   func ,g         * 
+FILE=xstate
+                                  ffc112e3  ffc11314        32
+  __Getmbcurmax
+                                  ffc112e3        16   func ,g         * 
+  __Getpmbstate
+                                  ffc112f9        1c   func ,g         * 
+FILE=xldscale
+                                  ffc11315  ffc11318         4
+  __LDscale
+                                  ffc11315         4   func ,g         * 
+FILE=xldunsca
+                                  ffc11319  ffc1131c         4
+  __LDunscale
+                                  ffc11319         4   func ,g         * 
+FILE=__COM_MOD64u
+                                  ffc1131d  ffc113a3        87
+  __COM_MOD64u
+                                  ffc1131d         0   none ,g         * 
+  _Loop_Init
+                                  ffc11327         0   none ,l         * 
+  _Loop
+                                  ffc1132b         0   none ,l         * 
+  _DivStart
+                                  ffc11337         0   none ,l         * 
+  _Success
+                                  ffc11345         0   none ,l         * 
+  _DivEnd
+                                  ffc1134d         0   none ,l         * 
+  IXI6DIV
+                                  ffc1134e         0   none ,l         * 
+  IXI4DIV
+                                  ffc11360         0   none ,l         * 
+  IXI2DIV
+                                  ffc11370         0   none ,l         * 
+  I8I2DIV
+                                  ffc11378         0   none ,l         * 
+  I4I2DIV
+                                  ffc11398         0   none ,l         * 
+FILE=_div
+                                  ffc113a4  ffc113af         c
+  _ldiv
+                                  ffc113a4         0   none ,g         * 
+  _div
+                                  ffc113a4         0   none ,g         * 
+FILE=localeco
+                                  ffc113b0  ffc113b6         7
+  _localeconv
+                                  ffc113b0         7   func ,g         * 
+FILE=xwcstate
+                                  ffc113b7  ffc113d2        1c
+  __Getpwcstate
+                                  ffc113b7        1c   func ,g         * 
+FILE=xfdscale
+                                  ffc113d3  ffc114eb       119
+  __FDscale
+                                  ffc113d3       119   func ,g         * 
+FILE=xfdunsca
+                                  ffc114ec  ffc11547        5c
+  __FDunscale
+                                  ffc114ec        5c   func ,g         * 
+FILE=xfdnorm
+                                  ffc11548  ffc115b5        6e
+  __FDnorm
+                                  ffc11548        6e   func ,g         * 
+
+SECTION=W_1
+FILE=DefaultBuild\r_bsp_cpu.obj
+                                  ffc115b6  ffc115c5        10
+FILE=DefaultBuild\r_bsp_software_interrupt.obj
+                                  ffc115c6  ffc115d2         d
+
+SECTION=W_2
+FILE=DefaultBuild\r_s12ad_rx64m.obj
+                                  ffc115d4  ffc115f3        20
+
+SECTION=L
+FILE=DefaultBuild\dbsct.obj
+                                  ffc115f4  ffc115f7         4
+  _deadSpace
+                                  ffc115f4         4   data ,g         * 
+FILE=DefaultBuild\lowsrc.obj
+                                  ffc115f8  ffc11639        42
+FILE=DefaultBuild\r_ether_rx.obj
+                                  ffc1163c  ffc116f6        bb
+FILE=DefaultBuild\r_dhcp_client.obj
+                                  ffc116f8  ffc11768        71
+FILE=DefaultBuild\r_dns_client.obj
+                                  ffc1176c  ffc1176d         2
+FILE=DefaultBuild\Sensor.obj
+                                  ffc11770  ffc118b3       144
+FILE=DefaultBuild\dsp_RFFT.obj
+                                  ffc118b4  ffc118d3        20
+FILE=DefaultBuild\EthernetProcess.obj
+                                  ffc118d4  ffc11a68       195
+FILE=DefaultBuild\LeadWell_Vibr.obj
+                                  ffc11a6c  ffc11dbc       351
+FILE=xprintf
+                                  ffc11dc0  ffc11dc6         7
+FILE=ether
+                                  ffc11dc8  ffc11dd3         c
+FILE=xldtob
+                                  ffc11dd4  ffc11df5        22
+FILE=xgenld
+                                  ffc11df8  ffc11df9         2
+FILE=localeco
+                                  ffc11dfc  ffc11e08         d
+
+SECTION=EXCEPTVECT
+FILE=DefaultBuild\vecttbl.obj
+                                  ffffff80  fffffffb        7c
+  _Except_Vectors
+                                  ffffff80        7c   data ,g         * 
+
+SECTION=RESETVECT
+FILE=DefaultBuild\vecttbl.obj
+                                  fffffffc  ffffffff         4
+  _Reset_Vector
+                                  fffffffc         4   data ,g         * 
+
+Absolute value symbols
+FILE=r_rfft_f32cf32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000008         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000004         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_sc_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000004         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_sc_tw32_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000008         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_tw32_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000008         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_x2_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000004         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+FILE=r_dsp_rfft_x2_tw32_i16ci32_rxv2
+  STACKSIZE
+                                  0000002c         0   none ,l         * 
+  _DATA_BYTE
+                                  00000008         0   none ,l         * 
+  _TWDL_BYTE
+                                  00000008         0   none ,l         * 
+  R_DSP_FFT_OPT_NO_BITREV
+                                  00000007         0   none ,l         * 
+  _DATA_ORDER
+                                  00000003         0   none ,l         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
