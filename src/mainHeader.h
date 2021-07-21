@@ -30,6 +30,5 @@
 
 void Rx64MInitPorts(void);
 void ServerConnect(void);
-uint16_t swapHLbyte(uint16_t n);
 
 #endif

@@ -8,7 +8,7 @@
 #define		SRC_CLIENT_IP		0,0,0,0			//This define seems unused
 
 #if USING_LOCAL == 1
-	#define		TAR_SERVER_IP		10,4,15,100
+	#define		TAR_SERVER_IP		10,0,0,178
 	#define		TAR_SERVER_PT		1883
 #else
 	#define		TAR_SERVER_IP		45,77,22,98
