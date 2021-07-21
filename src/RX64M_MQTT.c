@@ -47,8 +47,15 @@ tcp && tcp.flags.syn && ip.dst == 10.0.0.178 && ip.src == 10.0.0.0/24
 		printf("========================\n");
 		printf("BOOTED\n");
 	#endif
-	
 
+	MQTT_connect(TCP_CONNID_TD);
+		R_BSP_SoftwareDelay (100, BSP_DELAY_MILLISECS);
+	MQTT_subscribe(TCP_CONNID_TD);
+		R_BSP_SoftwareDelay (100, BSP_DELAY_MILLISECS);
+	MQTT_publish(TCP_CONNID_TD);
+		R_BSP_SoftwareDelay (100, BSP_DELAY_MILLISECS);
+	MQTT_terminate(TCP_CONNID_TD);
+		R_BSP_SoftwareDelay (100, BSP_DELAY_MILLISECS);
 	
 /*MAIN WHILE LOOP START POINT*/	
     while(1){
